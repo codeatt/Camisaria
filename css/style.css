@@ -37,6 +37,7 @@
     background-color: brown;
     height: 100px;
     width: 100%;
+    display: inline;
   }
 
   /* Configurações do Carousel */
