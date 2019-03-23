@@ -1,0 +1,55 @@
+/* Coringa */
+*{
+    margin: 0px;
+    padding: 0px;
+  }
+
+  /*Aqui definimos a cor do texto como o branco para todos os elementos e todo o texto estará no tamanho da fonte central*/
+  body{
+    color: white;
+    text-align: center;
+    font-size: 34px;
+  }
+  header{
+    background-color: orange;
+    height: 100px;
+    width: 100%;
+  }
+  .textoinicial{
+    background-color: red;
+    height: 100px;
+    width: 100%;
+  }
+  .nav{
+    background-color: blue;
+    height: 600px;
+    width: 30%;
+    float: left;
+  }
+  .article{
+    background-color: green;
+    height: 600px;
+    width: 70%; 
+    overflow: hidden;
+    float: right;
+  }
+  footer{
+    background-color: brown;
+    height: 100px;
+    width: 100%;
+  }
+
+  /* Configurações do Carousel */
+  .carousel{
+    background: #2f4357;
+    margin-top: 20px;
+  }
+    .carousel .item{
+    min-height: 280px; /* Impedir que o carrossel seja distorcido se, por algum motivo, a imagem não carregar */
+  }
+    .carousel .item img{
+    margin: 0 auto; /* Alinhar a imagem do slide horizontalmente */
+  }
+    .bs-example{
+    margin: 20px;
+  }
