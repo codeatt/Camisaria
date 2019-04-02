@@ -8,27 +8,73 @@
   body{
     color: white;
     text-align: center;
-    font-size: 34px;
+    font-size: 30px;
   }
   header{
-    background-color: orange;
-    height: 100px;
+    color: black;
+    background-color:orange;
+    height: 90px;
     width: 100%;
   }
+  .logo img{
+    width: 150px;
+  }
+  a {
+    color:black;
+  }
+  a:hover {
+    color:red;
+  }
+  header .container nav ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+
+  }
+  .home {
+    display: inline-block;justify-content: auto;
+    width:16,66%;
+    
+  }
+  .cadastro {
+    display: inline-block;justify-content: auto;
+    width:16,66%;
+  }
+  .contato {
+    display: inline-block;
+    justify-content: auto;
+    width:16,66%;
+  }
+  .login {
+    display: inline-block;justify-content: auto;
+    width:16,66%;
+  }
+  .produtos {
+    display: inline-block;justify-content: auto
+    width:16,66%;
+  }
+  .serviço {
+    display: inline-block;justify-content: auto
+    width:16,66%;
+  }
+ 
+
+ 
+   
   .textoinicial{
     background-color: red;
-    height: 100px;
-    width: 100%;
+    height: 90px;
+    width: 90%;
   }
   .nav{
     background-color: blue;
     height: 600px;
-    width: 30%;
-    float: left;
+    width: 28%;
+    float: left ;
   }
   .article{
     background-color: green;
-    height: 600px;
+    height: 500px;
     width: 70%; 
     overflow: hidden;
     float: right;
@@ -37,7 +83,8 @@
     background-color: brown;
     height: 100px;
     width: 100%;
-    display: inline;
+    display: block;
+    float: left;
   }
 
   /* Configurações do Carousel */
