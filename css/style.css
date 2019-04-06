@@ -6,7 +6,6 @@
 
   /*Aqui definimos a cor do texto como o branco para todos os elementos e todo o texto estará no tamanho da fonte central*/
   body{
-    color: white;
     text-align: center;
     font-size: 30px;
   }
