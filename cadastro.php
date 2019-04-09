@@ -11,7 +11,7 @@
   <meta name="author" content="Sergio Renato Bentes Reis Junior">
   <link rel="icon" href="../../favicon.ico">
 
-  <title>Login</title>
+  <title>Cadastro</title>
 
   <!-- Latest compiled and minified CSS -->
   <link rel="canonical" href="https://getbootstrap.com/docs/3.3/examples/signin/">
@@ -29,26 +29,7 @@
   include_once "header.php";
   ?>
     
-  <div class="container">
-  <div class="col-lg-4"></div>
-    <div class="col-lg-4">
-
-    <form class="form-signin center-block">
-    <h2 class="form-signin-heading">Please sign in</h2>
-    <label for="inputEmail" class="sr-only">Email address</label>
-    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-    <label for="inputPassword" class="sr-only">Password</label>
-    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-    <div class="checkbox">
-      <label>
-        <input type="checkbox" value="remember-me"> Remember me
-      </label>
-    </div>
-    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-    </form>
-    </div>
-    <div class="col-lg-4"></div>
-  </div> <!-- /container -->
+  
 
 
 
