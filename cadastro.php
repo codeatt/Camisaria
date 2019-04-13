@@ -1,41 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
+   <!-- CADASTRO -->
+   <div id="cadastro" class="bg-1" >
+        <div class="container">
+  
+        <h3 class="text-center">CADASTRO</h3>
+        <p class="text-center" style="margin-bottom:30px;"><em>Cadastre seu produto</em></p>
 
-<head>
-<meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <div class="row">
+            <div class="col-md-4">
+                <p>Cadastre seu produto</p>
+             
+            </div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="name" name="name" placeholder="Nome" type="text" required>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                    </div>
+                </div>
+                <textarea class="form-control" id="comments" name="comments" placeholder="Comentário" rows="5"></textarea>
+                <br>
+                <div class="row">
+                    <div class="col-md-12 form-group">
+                        <button class="btn pull-right" type="submit">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <meta name="description" content="Tela de Login em Bootstrap">
-  <meta name="author" content="Sergio Renato Bentes Reis Junior">
-  <link rel="icon" href="../../favicon.ico">
-
-  <title>Cadastro</title>
-
-  <!-- Latest compiled and minified CSS -->
-  <link rel="canonical" href="https://getbootstrap.com/docs/3.3/examples/signin/">
-
-  <!-- Jquery no head -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-  <!-- Custom styles for this template -->
-  <link rel="stylesheet" href="css/style.css">
-
-</head>
-<body>
-    
-  <?php
-  include_once "header.php";
-  ?>
-    
-  <p>Em construção</p>
-
-  <?php
-  include_once "footer.php";
-  ?>
-
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-</body>
-</html>
+  </div>
+    </div>
