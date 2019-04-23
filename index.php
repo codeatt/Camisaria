@@ -1,11 +1,11 @@
   <!-- Head -->
   <?php
-  include_once "head.php";
+  include "head.php";
   ?>
 
   <!-- Header -->
   <?php
-  include_once "header.php";
+  include "header.php";
   ?>
 
   <div class="textoinicial">
@@ -52,5 +52,5 @@
 
 <!-- Footer -->
   <?php
-    include_once "footer.php";
+    include  "footer.php";
   ?>

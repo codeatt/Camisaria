@@ -26,7 +26,7 @@
 <body>
     
   <?php
-  include_once "header.php";
+  include "header.php";
   ?>
     
   <div class="container">
@@ -53,7 +53,7 @@
 
 
   <?php
-  include_once "footer.php";
+  include  "footer.php";
   ?>
 
   <!-- Latest compiled and minified JavaScript -->

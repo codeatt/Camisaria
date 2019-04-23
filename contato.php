@@ -1,16 +1,16 @@
   <!-- Head -->
   <?php
-  include_once "head.php";
+  include "head.php";
   ?>
 
   <!-- Header -->
   <?php
-  include_once "header.php";
+  include "header.php";
   ?>
 
 <p>Em construção</p>
 
 <!-- Footer -->
 <?php
-include_once "footer.php";
+include  "footer.php";
 ?>
