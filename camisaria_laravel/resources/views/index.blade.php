@@ -1,201 +1,446 @@
 @extends('layouts.master')
 
+@section('styleCustomizado')
+<style>
+    span.text:hover {
+        color: #dbcc8f;
+    }
+
+    .login .social .circle {
+        color: #FFFFFF;
+        border-radius: 10px;
+        display: inline-block;
+        margin: 0 10px;
+        padding: 12px;
+    }
+
+    .modal-title {
+        margin-bottom: 0;
+        line-height: 1.5;
+        position: absolute;
+        left: 25px;
+        font-size: 18px;
+    }
+
+    p#demo {
+        text-align: left;
+        font-size: 48px;
+        margin-top: 0px;
+        font-weight: bold;
+        position: relative;
+        margin-bottom: 0px;
+    }
+    .ftco-footer-social li a {
+        padding-left: 12px !important;
+        padding-top: 12px !important;
+        height: 50px;
+        width: 50px;
+        display: block;
+        float: left;
+        background: #dbcc8f;
+        border-radius: 50%;
+        position: relative;
+      }
+</style>
+@stop
+
 @section('content')
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <img src="imagens/bg4.png" alt="New York" width="1200" height="700">
-                <div class="carousel-caption">
-                    <h3></h3>
-                    <p></p>
+<div class="modal fade login" id="loginModal" aria-labelledby="loginModal">
+    <div class="modal-dialog login animated">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Entrar com</h4>
+            </div>
+            <div class="modal-body">
+                <div class="box">
+                    <div class="content">
+                        <div class="social">
+                            <a class="circle github" href="#">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a id="google_login" class="circle google" href="#">
+                                <i class="fab fa-google-plus-g"></i>
+                            </a>
+                            <a id="facebook_login" class="circle facebook" href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </div>
+                        <div class="division">
+                            <div class="line l"></div>
+                            <span>ou</span>
+                            <div class="line r"></div>
+                        </div>
+                        <div class="error"></div>
+                        <div class="form loginBox">
+                            <form method="" action="" accept-charset="UTF-8">
+                                <input id="email" class="form-control" type="text" placeholder="Email" name="email">
+                                <input id="password" class="form-control" type="password" placeholder="Senha" name="password">
+                                <input class="btn btn-default btn-login" type="button" value="Entrar" onclick="loginAjax()">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="content registerBox" style="display:none;">
+                        <div class="form">
+                            <form method="" html="{:multipart=>true}" data-remote="true" action="" accept-charset="UTF-8">
+                                <input id="email" class="form-control" type="text" placeholder="Email" name="email">
+                                <input id="password" class="form-control" type="password" placeholder="Senha" name="password">
+                                <input id="password_confirmation" class="form-control" type="password" placeholder="Repita sua senha" name="password_confirmation">
+                                <input class="btn btn-default btn-register" type="button" value="Criar conta" name="commit">
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="item">
-                <img src="imagens/bg2.png" alt="Chicago" width="1200" height="700">
-                <div class="carousel-caption">
-                    <h3></h3>
-                    <p></p>
+            <div class="modal-footer">
+                <div class="forgot login-footer">
+                    <span>Deseja
+          <a href="https://movatsteste.000webhostapp.com/cadastro.html"><span style="color:#dbcc8f;">criar uma conta</span></a>
+                    ?</span>
                 </div>
-            </div>
-
-            <div class="item">
-                <img src="imagens/bg3.png" alt="Los Angeles" width="1200" height="700">
-                <div class="carousel-caption">
-                    <h3></h3>
-                    <p></p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-
-    <!-- SOBRE -->
-    <div id="sobre" class="container text-center">
-        <h3>SOBRE</h3>
-        <p><em>Camisas Sob Medida</em></p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum id asperiores numquam debitis dolorem possimus repudiandae. Atque harum, perspiciatis voluptatem doloremque praesentium sapiente voluptas possimus aperiam quasi, veniam ratione nam.
-        </p>
-        <br>
-        <div class="row">
-            <div class="col-sm-4">
-                <p class="text-center"><strong>Título um</strong></p><br>
-                <a href="#demo" data-toggle="collapse">
-                    <img src="imagens/colarinho-classico.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
-                </a>
-                <div id="demo" class="collapse">
-                    <p>Título a definir</p>
-                    <p>Descrição 1 a definir e bla bla bla</p>
-                    <p>Texto genérico bla bla</p>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <p class="text-center"><strong>Título dois</strong></p><br>
-                <a href="#demo2" data-toggle="collapse">
-                    <img src="imagens/colarinho-italiano.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
-                </a>
-                <div id="demo2" class="collapse">
-                    <p>Título a definir</p>
-                    <p>Descrição 1 a definir e bla bla bla</p>
-                    <p>Texto genérico bla bla</p>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <p class="text-center"><strong>Título três</strong></p><br>
-                <a href="#demo3" data-toggle="collapse">
-                    <img src="imagens/colarinho-meio-italiano.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
-                </a>
-                <div id="demo3" class="collapse">
-                    <p>Título a definir</p>
-                    <p>Descrição 1 a definir e bla bla bla</p>
-                    <p>Texto genérico bla bla</p>
+                <div class="forgot register-footer" style="display:none">
+                    <a href="https://movatsteste.000webhostapp.com/cadastro.html"><span>Ainda não é cadastrado?</span></a>
+                    <a href="javascript: showLoginForm();">Entrar</a>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- SERVIÇOS -->
-    <div id="servicos" class="bg-1" >
-        <div class="container">
-            <h3 class="text-center">SERVIÇOS</h3>
-            <p class="text-center" style="margin-bottom:30px;">Lorem ipsum we'll play you some music.</p>
+</div>
+<!-- FIM MODAL -->
 
 
-            <div class="row text-center">
-                <div class="col-sm-4">
-                    <div class="thumbnail">
-                        <img src="imagens/imagem_1.jpg" alt="" width="400" height="300">
-                        <p><strong>Serviço Um</strong></p>
-                        <p>Aqui vai a descrição</p>
-                        <button class="btn " data-toggle="modal" data-target="#" style="width:90%;">Clique aqui</button>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="thumbnail">
-                        <img src="imagens/imagem_2.jpg" alt="" width="400" height="300">
-                        <p><strong>Serviço Dois</strong></p>
-                        <p>Aqui vai a descrição</p>
-                        <button class="btn " data-toggle="modal" data-target="#" style="width:90%;">Clique aqui</button>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="thumbnail">
-                        <img src="imagens/imagem_3.jpg" alt="" width="400" height="300">
-                        <p><strong>Serviço Três</strong></p>
-                        <p>Aqui vai a descrição</p>
-                        <button class="btn" data-toggle="modal" data-target="#" style="width:90%;">Clique aqui</button>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- Modal -->
-        <div class="modal fade" id="myModal" role="dialog">
-            <div class="modal-dialog">
 
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">×</button>
-                        <h4><span class="glyphicon glyphicon-lock"></span> Tickets</h4>
-                    </div>
-                    <div class="modal-body">
-                        <form role="form">
-                            <div class="form-group">
-                                <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> Tickets, $23 per person</label>
-                                <input type="number" class="form-control" id="psw" placeholder="How many?">
+
+
+
+
+
+
+
+<section id="home-section" class="hero">
+    <div class="home-slider owl-carousel">
+
+
+
+        <div class="slider-item js-fullheight">
+            <div class="overlay"></div>
+            <div class="container-fluid p-0">
+                <div class="row d-md-flex no-gutters slider-text align-items-center justify-content-end" data-scrollax-parent="true">
+                    <img class="one-third order-md-last img-fluid" src="https://movatsteste.000webhostapp.com/imagens/banner_img1.png" alt="">
+                    <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+                        <div class="text">
+                            <span class="subheading">#APROVEITE!</span>
+                            <div class="horizontal">
+                                <h1 class="mb-4 mt-3">Camisas Personalizadas</h1>
+                                <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country.</p>
+
+                                <p><a href="https://movatsteste.000webhostapp.com/crie_sua_camisa.html" class="btn-custom">Crie sua camisa!</a></p>
                             </div>
-                            <div class="form-group">
-                                <label for="usrname"><span class="glyphicon glyphicon-user"></span> Send To</label>
-                                <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="slider-item js-fullheight">
+            <div class="overlay"></div>
+            <div class="container-fluid p-0">
+                <div class="row d-md-flex no-gutters slider-text align-items-center justify-content-end" data-scrollax-parent="true">
+                    <img class="one-third order-md-last img-fluid" src="https://movatsteste.000webhostapp.com/imagens/banner_img2.png" alt="">
+                    <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+                        <div class="text">
+                            <span class="subheading">#APROVEITE!</span>
+                            <div class="horizontal">
+                                <h1 class="mb-4 mt-3">Camisas Personalizadas</h1>
+                                <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country.</p>
+
+                                <p><a href="https://movatsteste.000webhostapp.com/crie_sua_camisa.html" class="btn-custom">Crie sua camisa!</a></p>
                             </div>
-                            <button type="submit" class="btn btn-block">Pay 
-                <span class="glyphicon glyphicon-ok"></span>
-              </button>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
-            <span class="glyphicon glyphicon-remove"></span> Cancel
-          </button>
-                        <p>Need <a href="#">help?</a></p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+
+
     </div>
+</section>
 
-    <!-- CONTATO -->
-    <div id="contact" class="container">
-        <h3 class="text-center">CONTATO</h3>
-        <p class="text-center" style="margin-bottom:30px;"><em>Preencha seus dados. Retornaremos assim que possível.</em></p>
 
+
+
+
+<!-- QUEM SOMOS -->
+
+<section class="ftco-section bg-white" style="margin-bottom:40px;" id="a_camisaria">
+    <div class="container">
+        <div class="row justify-content-center mb-3 pb-3">
+            <div class="col-md-12 heading-section text-center ftco-animate">
+                <h2 class="mb-4" style="color:#dbcc8f !important; ">A Camisaria</h2>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in
+                    Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections
+                    1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum,
+                    "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+
+                <p> The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied
+                    by English versions from the 1914 translation by H. Rackham.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
         <div class="row">
-            <div class="col-md-4">
-                <p>Nome da rua, 00 - Bairro</p>
-                <p><span class="glyphicon glyphicon-map-marker"></span>&nbsp; São Paulo - SP</p>
-                <p><span class="glyphicon glyphicon-phone"></span>&nbsp;Fone: +00 1515151515</p>
-                <p><span class="glyphicon glyphicon-envelope"></span>&nbsp;Email: contato@acamiseraria.com.br</p>
+
+
+
+
+
+        </div>
+</section>
+
+<!-- FIM SESSÃO -->
+
+
+
+
+<!-- NOVA SESSÃO -->
+
+<section class="ftco-section bg-light" style="margin-bottom:40px;" id="passo_a_passo">
+    <div class="container">
+        <div class="row justify-content-center mb-3 pb-3">
+            <div class="col-md-12 heading-section text-center ftco-animate">
+                <h2 class="mb-4">Passo a Passo</h2>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
             </div>
-            <div class="col-md-8">
-                <div class="row">
-                    <div class="col-sm-6 form-group">
-                        <input class="form-control" id="name" name="name" placeholder="Nome" type="text" required>
-                    </div>
-                    <div class="col-sm-6 form-group">
-                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+
+
+            <!-- PRODUTO -->
+
+            <div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
+                <div class="product d-flex flex-column">
+                    <a href="#" class="img-prod"><img class="img-fluid" src="https://movatsteste.000webhostapp.com/imagens/passo1.png" alt="">
+                        <span class="status">PASSO 1</span>
+                        <div class="overlay"></div>
+                    </a>
+                    <div class="text py-3 pb-4 px-3">
+                        <div class="d-flex">
+                            <div class="cat">
+                                <span>Modelo</span>
+                            </div>
+
+                        </div>
+                        <h3>Defina o modelo, tecido e carcterísticas de sua camisa.</h3>
+
+
                     </div>
                 </div>
-                <textarea class="form-control" id="comments" name="comments" placeholder="Comentário" rows="5"></textarea>
-                <br>
-                <div class="row">
-                    <div class="col-md-12 form-group">
-                        <button class="btn pull-right" type="submit">Enviar</button>
+            </div>
+
+            <!-- FIM PRODUTO -->
+
+            <!-- PRODUTO -->
+
+            <div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
+                <div class="product d-flex flex-column">
+                    <a href="#" class="img-prod"><img class="img-fluid" src="https://movatsteste.000webhostapp.com/imagens/passo2.png" alt="">
+                        <span class="status">PASSO 2</span>
+                        <div class="overlay"></div>
+                    </a>
+                    <div class="text py-3 pb-4 px-3">
+                        <div class="d-flex">
+                            <div class="cat">
+                                <span>Medidas</span>
+                            </div>
+
+                        </div>
+                        <h3>Insira suas medidas, de acordo com o informado no site.</h3>
+
+
                     </div>
+                </div>
+            </div>
+
+            <!-- FIM PRODUTO -->
+
+
+            <!-- PRODUTO -->
+
+            <div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
+                <div class="product d-flex flex-column">
+                    <a href="#" class="img-prod"><img class="img-fluid" src="https://movatsteste.000webhostapp.com/imagens/passo3.png" alt="">
+                        <span class="status">PASSO 3</span>
+                        <div class="overlay"></div>
+                    </a>
+                    <div class="text py-3 pb-4 px-3">
+                        <div class="d-flex">
+                            <div class="cat">
+                                <span>Confecção</span>
+                            </div>
+
+                        </div>
+                        <h3>Sua camisa será confeccionada em até 7 dias úteis.</h3>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- FIM PRODUTO -->
+
+
+            <!-- PRODUTO -->
+
+            <div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
+                <div class="product d-flex flex-column">
+                    <a href="#" class="img-prod"><img class="img-fluid" src="https://movatsteste.000webhostapp.com/imagens/passo4.png" alt="">
+                        <span class="status">PASSO 4</span>
+                        <div class="overlay"></div>
+                    </a>
+                    <div class="text py-3 pb-4 px-3">
+                        <div class="d-flex">
+                            <div class="cat">
+                                <span>Entrega</span>
+                            </div>
+
+                        </div>
+                        <h3>Receba sua camisa personalizada em casa.</h3>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- FIM PRODUTO -->
+
+
+
+        </div>
+</section>
+
+<!-- FIM SESSÃO -->
+
+
+
+<section class="ftco-section ftco-deal bg-primary">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="https://movatsteste.000webhostapp.com/imagens/camisa2.png" id="img_promo" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-6">
+                <div class="heading-section heading-section-white align-middle">
+                    <span class="subheading">&nbsp;</span>
+                    <h2 style="margin:0px;"><span style="color:#fff;" id="h2_promo">24 Horas de Loucura!</span></h2>
+                </div>
+                <p id="demo"></p>
+                <div class="text-deal">
+                    <h4 style="line-height:1.0;" id="txt_promo">Personalize sua camisa até amanhã e <span style="font-weight:bold;">ganhe 50% de desconto!</span></h4>
+                    <p><a href="https://movatsteste.000webhostapp.com/crie_sua_camisa.html"><button type="button"  class="btn btn-secondary btn-lg" id="btn_home">Crie sua camisa!</button></a></p>
+
                 </div>
             </div>
         </div>
-
-
     </div>
+</section>
 
-    <!-- Image of location/map -->
-    <img src="imagens/img_home_baixo.jpg" class="img-responsive" style="width:100%">
+
+
+<section class="ftco-gallery">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 heading-section text-center mb-4 ftco-animate">
+                <h2 class="mb-4">Clientes satisfeitos!</h2>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid px-0">
+        <div class="row no-gutters">
+            <div class="col-md-4 col-lg-2 ftco-animate">
+                <a href="https://movatsteste.000webhostapp.com/imagens/bg2_.png" class="gallery image-popup img d-flex align-items-center" style="background-image: url(https://movatsteste.000webhostapp.com/imagens/bg2_.png);">
+                    <div class="icon mb-4 d-flex align-items-center justify-content-center">
+                        <i class="fas fa-plus-circle" style="color: rgba(255,255,255,0.8); font-size:20px;"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 col-lg-2 ftco-animate">
+                <a href="https://movatsteste.000webhostapp.com/imagens/bg4.png" class="gallery image-popup img d-flex align-items-center" style="background-image: url(https://movatsteste.000webhostapp.com/imagens/bg4.png);">
+                    <div class="icon mb-4 d-flex align-items-center justify-content-center">
+                        <i class="fas fa-plus-circle" style="color: rgba(255,255,255,0.8); font-size:20px;"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 col-lg-2 ftco-animate">
+                <a href="https://movatsteste.000webhostapp.com/imagens/alfaiate.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(https://movatsteste.000webhostapp.com/imagens/alfaiate.jpg);">
+                    <div class="icon mb-4 d-flex align-items-center justify-content-center">
+                        <i class="fas fa-plus-circle" style="color: rgba(255,255,255,0.8); font-size:20px;"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 col-lg-2 ftco-animate">
+                <a href="https://movatsteste.000webhostapp.com/imagens/camisa4.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(https://movatsteste.000webhostapp.com/imagens/camisa4.jpg);">
+                    <div class="icon mb-4 d-flex align-items-center justify-content-center">
+                        <i class="fas fa-plus-circle" style="color: rgba(255,255,255,0.8); font-size:20px;"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 col-lg-2 ftco-animate">
+                <a href="https://movatsteste.000webhostapp.com/imagens/img_home_baixo.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(https://movatsteste.000webhostapp.com/imagens/img_home_baixo.jpg);">
+                    <div class="icon mb-4 d-flex align-items-center justify-content-center">
+                        <i class="fas fa-plus-circle" style="color: rgba(255,255,255,0.8); font-size:20px;"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 col-lg-2 ftco-animate">
+                <a href="https://movatsteste.000webhostapp.com/imagens/bg3.png" class="gallery image-popup img d-flex align-items-center" style="background-image: url(https://movatsteste.000webhostapp.com/imagens/bg3.png); color:#fff;">
+                    <div class="icon mb-4 d-flex align-items-center justify-content-center">
+                        <i class="fas fa-plus-circle" style="color: rgba(255,255,255,0.8); font-size:20px;"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+@stop
+
+@section('scriptCustomizado')
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Output the result in an element with id="demo"
+        document.getElementById("demo").innerHTML = hours + "h " +
+            minutes + "m " + seconds + "s ";
+
+        // If the count down is over, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+    }, 1000);
+</script>
+
 @stop
