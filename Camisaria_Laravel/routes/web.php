@@ -11,5 +11,5 @@
 |
 */
 
-Route::get('/index ','camisariaController@homeCamisaria');
+Route::get('/ ','camisariaController@homeCamisaria');
 
