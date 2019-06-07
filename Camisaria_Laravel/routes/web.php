@@ -12,3 +12,13 @@
 */
 
 Route::get('/ ','camisariaController@homeCamisaria');
+
+Route::get('/crie_sua_camisa ','camisariaController@crieCamisaria');
+
+Route::get('/cadastro ','camisariaController@homeCamisaria');
+
+Route::get('/carrinho ','camisariaController@homeCamisaria');
+
+Route::get('/checkout ','camisariaController@homeCamisaria');
+
+Route::get('/contato ','camisariaController@contatoCamisaria');

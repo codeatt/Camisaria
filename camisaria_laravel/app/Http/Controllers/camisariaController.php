@@ -9,4 +9,10 @@ class camisariaController extends Controller
     public function homeCamisaria (){
         return view('index');
     }
+    public function crieCamisaria (){
+        return view('crie_sua_camisa');
+    }
+    public function contatoCamisaria (){
+        return view('contato');
+    }
 }
