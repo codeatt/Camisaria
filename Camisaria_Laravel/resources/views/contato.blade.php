@@ -2,34 +2,7 @@
 
 @section('styleCustomizado')
 <style>
-span.text:hover {
-    color: #dbcc8f;
-}
 
-.login .social .circle {
-    color: #FFFFFF;
-    border-radius: 10px;
-    display: inline-block;
-    margin: 0 10px;
-    padding: 12px;
-}
-
-.modal-title {
-    margin-bottom: 0;
-    line-height: 1.5;
-    position: absolute;
-    left: 25px;
-    font-size: 18px;
-}
-
-p#demo {
-    text-align: left;
-    font-size: 48px;
-    margin-top: 0px;
-    font-weight: bold;
-    position: relative;
-    margin-bottom: 0px;
-}
 
 .ftco-section {
     /*  padding: 7em 0; */
@@ -52,18 +25,7 @@ p#demo {
     color: #fff;
 }
 
-.ftco-footer-social li a {
-padding-left: 12px !important;
-padding-top: 12px !important;
-height: 50px;
-width: 50px;
-display: block;
-float: left;
-background: #dbcc8f;
-border-radius: 50%;
-position: relative;
 
-}
 </style>
 @stop
 
@@ -136,7 +98,7 @@ position: relative;
 
     <!-- FIM MODAL -->
 
-    <div class="hero-wrap hero-bread" style="background-image: url('https://movatsteste.000webhostapp.com/imagens/bg2_.png'); background-size: cover; background-position: top;">
+    <div class="hero-wrap hero-bread" style="background-image: url('/imagens/bg2_.png'); background-size: cover; background-position: top;">
         <div class="container">
             <div class="row no-gutters slider-text align-items-center justify-content-center">
                 <div class="col-md-9 ftco-animate text-center">
@@ -215,42 +177,42 @@ position: relative;
         <div class="container-fluid px-0">
             <div class="row no-gutters">
                 <div class="col-md-4 col-lg-2 ftco-animate">
-                    <a href="https://movatsteste.000webhostapp.com/imagens/bg2_.png" class="gallery image-popup img d-flex align-items-center" style="background-image: url(https://movatsteste.000webhostapp.com/imagens/bg2_.png);">
+                    <a href="/imagens/bg2_.png" class="gallery image-popup img d-flex align-items-center" style="background-image: url(/imagens/bg2_.png);">
                         <div class="icon mb-4 d-flex align-items-center justify-content-center">
                             <i class="fas fa-plus-circle" style="color: rgba(255,255,255,0.8); font-size:20px;"></i>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4 col-lg-2 ftco-animate">
-                    <a href="https://movatsteste.000webhostapp.com/imagens/bg4.png" class="gallery image-popup img d-flex align-items-center" style="background-image: url(https://movatsteste.000webhostapp.com/imagens/bg4.png);">
+                    <a href="/imagens/bg4.png" class="gallery image-popup img d-flex align-items-center" style="background-image: url(/imagens/bg4.png);">
                         <div class="icon mb-4 d-flex align-items-center justify-content-center">
                             <i class="fas fa-plus-circle" style="color: rgba(255,255,255,0.8); font-size:20px;"></i>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4 col-lg-2 ftco-animate">
-                    <a href="https://movatsteste.000webhostapp.com/imagens/alfaiate.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(https://movatsteste.000webhostapp.com/imagens/alfaiate.jpg);">
+                    <a href="/imagens/alfaiate.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(/imagens/alfaiate.jpg);">
                         <div class="icon mb-4 d-flex align-items-center justify-content-center">
                             <i class="fas fa-plus-circle" style="color: rgba(255,255,255,0.8); font-size:20px;"></i>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4 col-lg-2 ftco-animate">
-                    <a href="https://movatsteste.000webhostapp.com/imagens/camisa4.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(https://movatsteste.000webhostapp.com/imagens/camisa4.jpg);">
+                    <a href="/imagens/camisa4.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(/imagens/camisa4.jpg);">
                         <div class="icon mb-4 d-flex align-items-center justify-content-center">
                             <i class="fas fa-plus-circle" style="color: rgba(255,255,255,0.8); font-size:20px;"></i>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4 col-lg-2 ftco-animate">
-                    <a href="https://movatsteste.000webhostapp.com/imagens/img_home_baixo.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(https://movatsteste.000webhostapp.com/imagens/img_home_baixo.jpg);">
+                    <a href="/imagens/img_home_baixo.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(/imagens/img_home_baixo.jpg);">
                         <div class="icon mb-4 d-flex align-items-center justify-content-center">
                             <i class="fas fa-plus-circle" style="color: rgba(255,255,255,0.8); font-size:20px;"></i>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4 col-lg-2 ftco-animate">
-                    <a href="https://movatsteste.000webhostapp.com/imagens/bg3.png" class="gallery image-popup img d-flex align-items-center" style="background-image: url(https://movatsteste.000webhostapp.com/imagens/bg3.png); color:#fff;">
+                    <a href="/imagens/bg3.png" class="gallery image-popup img d-flex align-items-center" style="background-image: url(/imagens/bg3.png); color:#fff;">
                         <div class="icon mb-4 d-flex align-items-center justify-content-center">
                             <i class="fas fa-plus-circle" style="color: rgba(255,255,255,0.8); font-size:20px;"></i>
                         </div>

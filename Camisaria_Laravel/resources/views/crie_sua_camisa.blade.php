@@ -2,25 +2,7 @@
 
 @section('styleCustomizado')
 <style>
-span.text:hover {
-    color: #dbcc8f;
-}
 
-.login .social .circle {
-    color: #FFFFFF;
-    border-radius: 10px;
-    display: inline-block;
-    margin: 0 10px;
-    padding: 12px;
-}
-
-.modal-title {
-    margin-bottom: 0;
-    line-height: 1.5;
-    position: absolute;
-    left: 25px;
-    font-size: 18px;
-}
 
 p#demo {
     text-align: left;
@@ -52,18 +34,7 @@ p#demo {
     color: #fff;
 }
 
-.ftco-footer-social li a {
-padding-left: 12px !important;
-padding-top: 12px !important;
-height: 50px;
-width: 50px;
-display: block;
-float: left;
-background: #dbcc8f;
-border-radius: 50%;
-position: relative;
 
-}
 </style>
 @stop
 
@@ -136,7 +107,7 @@ position: relative;
 
     <!-- FIM MODAL -->
 
-    <div class="hero-wrap hero-bread" style="background-image: url('https://movatsteste.000webhostapp.com/imagens/bg2_.png'); background-size: cover; background-position: top;">
+    <div class="hero-wrap hero-bread" style="background-image: url('/imagens/bg2_.png'); background-size: cover; background-position: top;">
         <div class="container">
             <div class="row no-gutters slider-text align-items-center justify-content-center">
                 <div class="col-md-9 ftco-animate text-center">
@@ -165,7 +136,7 @@ position: relative;
 
                 <div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
                     <div class="product d-flex flex-column">
-                        <a href="#" class="img-prod"><img class="img-fluid" src="https://movatsteste.000webhostapp.com/imagens/passo1.png" alt="Colorlib Template">
+                        <a href="#" class="img-prod"><img class="img-fluid" src="/imagens/passo1.png" alt="Colorlib Template">
                             <span class="status">PASSO 1</span>
                             <div class="overlay"></div>
                         </a>
@@ -189,7 +160,7 @@ position: relative;
 
                 <div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
                     <div class="product d-flex flex-column">
-                        <a href="#" class="img-prod"><img class="img-fluid" src="https://movatsteste.000webhostapp.com/imagens/passo2.png" alt="Colorlib Template">
+                        <a href="#" class="img-prod"><img class="img-fluid" src="/imagens/passo2.png" alt="Colorlib Template">
                             <span class="status">PASSO 2</span>
                             <div class="overlay"></div>
                         </a>
@@ -214,7 +185,7 @@ position: relative;
 
                 <div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
                     <div class="product d-flex flex-column">
-                        <a href="#" class="img-prod"><img class="img-fluid" src="https://movatsteste.000webhostapp.com/imagens/passo3.png" alt="Colorlib Template">
+                        <a href="#" class="img-prod"><img class="img-fluid" src="/imagens/passo3.png" alt="Colorlib Template">
                             <span class="status">PASSO 3</span>
                             <div class="overlay"></div>
                         </a>
@@ -239,7 +210,7 @@ position: relative;
 
                 <div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
                     <div class="product d-flex flex-column">
-                        <a href="#" class="img-prod"><img class="img-fluid" src="https://movatsteste.000webhostapp.com/imagens/passo4.png" alt="Colorlib Template">
+                        <a href="#" class="img-prod"><img class="img-fluid" src="/imagens/passo4.png" alt="Colorlib Template">
                             <span class="status">PASSO 4</span>
                             <div class="overlay"></div>
                         </a>
@@ -271,7 +242,7 @@ position: relative;
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 mb-5 ftco-animate">
-                    <a href="https://movatsteste.000webhostapp.com/imagens/camisa_social.jpg" class="image-popup prod-img-bg"><img src="https://movatsteste.000webhostapp.com/imagens/camisa_social.jpg" class="img-fluid" alt="produto"></a>
+                    <a href="/imagens/camisa_social.jpg" class="image-popup prod-img-bg"><img src="/imagens/camisa_social.jpg" class="img-fluid" alt="produto"></a>
                 </div>
                 <div class="col-lg-6 product-details pl-md-5 ftco-animate">
                     <h3>Camisa de Algodão</h3>
@@ -327,7 +298,7 @@ position: relative;
                             <p style="color: #000;">80 piece available</p>
                         </div>
                     </div>
-                    <p><a href="https://movatsteste.000webhostapp.com/carrinho.html" class="btn btn-primary py-3 px-5">Comprar</a></p>
+                    <p><a href="/carrinho.html" class="btn btn-primary py-3 px-5">Comprar</a></p>
                 </div>
             </div>
 
