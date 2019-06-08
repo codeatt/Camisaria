@@ -111,7 +111,7 @@
     right: 0;
 }
 .login .division span {
-    color: #424242;
+    color: #fff;
     font-size: 17px;
 }
 .login .box .social {
@@ -126,7 +126,7 @@
     border-radius: 100px;
     display: inline-block;
     margin: 0 17px;
-    padding: 15px;
+    padding: 11px;
 }
 .login .social .circle .fa{
     font-size: 16px;
@@ -158,19 +158,23 @@
     width: 100%;
 }
 .login .btn-login, .registerBox .btn-register{
-    background-color: #00BBFF;
-    border-color: #00BBFF;
-    border-width: 0;
+    background-color: #bb935f;
+    border: none;
+    outline: none;
     color: #FFFFFF;
     display: block;
     margin: 0 auto;
+    margin-top:10px;
     padding: 15px 50px;
     text-transform: uppercase;
     width: 100%;
+    font-size: 15px;
+    border-radius: 8px;
 }
 .login .btn-login:hover, .registerBox .btn-register:hover{
-    background-color: #00A4E4;
+    background-color: #8f724d;
     color: #FFFFFF;
+    outline: none;
 }
 .login .form-control{
     border-radius: 3px;
@@ -186,8 +190,10 @@
     background-color: rgba(0,0,0,0.23);
     color: #FFFFFF;
 }
+
 .login .box .form input[type="text"], .login .box .form input[type="password"] {
-    border-radius: 3px;
+    border-radius: 8px !important;
+    margin-top: 10px !important;
     border: none;
     color: #333333;
     font-size: 16px;
@@ -196,6 +202,8 @@
     padding: 13px 12px;
     width: 100%;
 }
+
+
 
 
 @media (max-width:400px){
