@@ -31,8 +31,10 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/imagens/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 
-    <link href="/css/login-register-LR.css" rel="stylesheet" />
+    <link href="css/login-register-LR.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    
     @yield('styleCustomizado')
 </head>
 
@@ -60,7 +62,7 @@
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
-            <a class="navbar-brand" href="/"><img src="https://movatsteste.000webhostapp.com/imagens/logo_camisaria_2.png" height="35px" alt=""></a>
+            <a class="navbar-brand" href="/"><img src="/imagens/logo_camisaria_2.png" height="35px" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 				<i class="fas fa-bars"></i> Menu
 			</button>
@@ -183,3 +185,4 @@
 </body>
 
 </html>
+

@@ -6526,9 +6526,17 @@ a.close.disabled {
 }
 
 .modal-title {
-    margin-bottom: 0;
+    margin-bottom: 10px;
     line-height: 1.5;
+    position: absolute;
+    left: 25px;
+    font-size: 18px;
+    top: 18px;
+    color: #dbcc8f;
+
 }
+
+
 
 .modal-body {
     position: relative;
@@ -11365,11 +11373,12 @@ h5,
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
-    border-radius: 50%;
+    border-radius: 30%;
     background: #fff;
     cursor: pointer;
     position: relative;
     text-align: center;
+    padding-top:5px;
     margin: 0 auto;
     display: block;
 }
@@ -12826,12 +12835,12 @@ a.mouse-icon {
 }
 
 .circle {
-    width: 300px;
-    height: 300px;
+    width: 50px;
+    height: 50px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
-    border-radius: 50%;
+    border-radius: 14px !important;
     margin: 0 auto;
     background: rgba(255, 255, 255, 0.8);
 }
@@ -13147,7 +13156,7 @@ textarea.form-control {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
-    border-radius: 50%;
+    border-radius: 30%;
 }
 
 .gallery .icon span {
@@ -13207,19 +13216,19 @@ textarea.form-control {
 
 .ftco-footer-social li {
     list-style: none;
-    margin: 0 10px 0 0;
+    margin: 0 0 0 0;
     display: inline-block;
 }
 
 .ftco-footer-social li a {
-    padding-left: 20px !important;
+    padding-left: 12px !important;
     padding-top: 12px !important;
     height: 50px;
     width: 50px;
     display: block;
     float: left;
     background: #dbcc8f;
-    border-radius: 50%;
+    border-radius: 30%;
     position: relative;
     
 }

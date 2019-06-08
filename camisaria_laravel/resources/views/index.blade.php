@@ -2,45 +2,7 @@
 
 @section('styleCustomizado')
 <style>
-    span.text:hover {
-        color: #dbcc8f;
-    }
 
-    .login .social .circle {
-        color: #FFFFFF;
-        border-radius: 10px;
-        display: inline-block;
-        margin: 0 10px;
-        padding: 12px;
-    }
-
-    .modal-title {
-        margin-bottom: 0;
-        line-height: 1.5;
-        position: absolute;
-        left: 25px;
-        font-size: 18px;
-    }
-
-    p#demo {
-        text-align: left;
-        font-size: 48px;
-        margin-top: 0px;
-        font-weight: bold;
-        position: relative;
-        margin-bottom: 0px;
-    }
-    .ftco-footer-social li a {
-        padding-left: 12px !important;
-        padding-top: 12px !important;
-        height: 50px;
-        width: 50px;
-        display: block;
-        float: left;
-        background: #dbcc8f;
-        border-radius: 50%;
-        position: relative;
-      }
 </style>
 @stop
 
@@ -97,11 +59,11 @@
             <div class="modal-footer">
                 <div class="forgot login-footer">
                     <span>Deseja
-          <a href="https://movatsteste.000webhostapp.com/cadastro.html"><span style="color:#dbcc8f;">criar uma conta</span></a>
+          <a href="/cadastro.html"><span style="color:#dbcc8f;">criar uma conta</span></a>
                     ?</span>
                 </div>
                 <div class="forgot register-footer" style="display:none">
-                    <a href="https://movatsteste.000webhostapp.com/cadastro.html"><span>Ainda não é cadastrado?</span></a>
+                    <a href="/cadastro.html"><span>Ainda não é cadastrado?</span></a>
                     <a href="javascript: showLoginForm();">Entrar</a>
                 </div>
             </div>
@@ -129,7 +91,7 @@
             <div class="overlay"></div>
             <div class="container-fluid p-0">
                 <div class="row d-md-flex no-gutters slider-text align-items-center justify-content-end" data-scrollax-parent="true">
-                    <img class="one-third order-md-last img-fluid" src="https://movatsteste.000webhostapp.com/imagens/banner_img1.png" alt="">
+                    <img class="one-third order-md-last img-fluid" src="/imagens/banner_img1.png" alt="">
                     <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
                         <div class="text">
                             <span class="subheading">#APROVEITE!</span>
@@ -137,7 +99,7 @@
                                 <h1 class="mb-4 mt-3">Camisas Personalizadas</h1>
                                 <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country.</p>
 
-                                <p><a href="https://movatsteste.000webhostapp.com/crie_sua_camisa.html" class="btn-custom">Crie sua camisa!</a></p>
+                                <p><a href="/crie_sua_camisa.html" class="btn-custom">Crie sua camisa!</a></p>
                             </div>
                         </div>
                     </div>
@@ -150,7 +112,7 @@
             <div class="overlay"></div>
             <div class="container-fluid p-0">
                 <div class="row d-md-flex no-gutters slider-text align-items-center justify-content-end" data-scrollax-parent="true">
-                    <img class="one-third order-md-last img-fluid" src="https://movatsteste.000webhostapp.com/imagens/banner_img2.png" alt="">
+                    <img class="one-third order-md-last img-fluid" src="/imagens/banner_img2.png" alt="">
                     <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
                         <div class="text">
                             <span class="subheading">#APROVEITE!</span>
@@ -158,7 +120,7 @@
                                 <h1 class="mb-4 mt-3">Camisas Personalizadas</h1>
                                 <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country.</p>
 
-                                <p><a href="https://movatsteste.000webhostapp.com/crie_sua_camisa.html" class="btn-custom">Crie sua camisa!</a></p>
+                                <p><a href="/crie_sua_camisa.html" class="btn-custom">Crie sua camisa!</a></p>
                             </div>
                         </div>
                     </div>
@@ -226,7 +188,7 @@
 
             <div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
                 <div class="product d-flex flex-column">
-                    <a href="#" class="img-prod"><img class="img-fluid" src="https://movatsteste.000webhostapp.com/imagens/passo1.png" alt="">
+                    <a href="#" class="img-prod"><img class="img-fluid" src="/imagens/passo1.png" alt="">
                         <span class="status">PASSO 1</span>
                         <div class="overlay"></div>
                     </a>
@@ -250,7 +212,7 @@
 
             <div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
                 <div class="product d-flex flex-column">
-                    <a href="#" class="img-prod"><img class="img-fluid" src="https://movatsteste.000webhostapp.com/imagens/passo2.png" alt="">
+                    <a href="#" class="img-prod"><img class="img-fluid" src="/imagens/passo2.png" alt="">
                         <span class="status">PASSO 2</span>
                         <div class="overlay"></div>
                     </a>
@@ -275,7 +237,7 @@
 
             <div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
                 <div class="product d-flex flex-column">
-                    <a href="#" class="img-prod"><img class="img-fluid" src="https://movatsteste.000webhostapp.com/imagens/passo3.png" alt="">
+                    <a href="#" class="img-prod"><img class="img-fluid" src="/imagens/passo3.png" alt="">
                         <span class="status">PASSO 3</span>
                         <div class="overlay"></div>
                     </a>
@@ -300,7 +262,7 @@
 
             <div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
                 <div class="product d-flex flex-column">
-                    <a href="#" class="img-prod"><img class="img-fluid" src="https://movatsteste.000webhostapp.com/imagens/passo4.png" alt="">
+                    <a href="#" class="img-prod"><img class="img-fluid" src="/imagens/passo4.png" alt="">
                         <span class="status">PASSO 4</span>
                         <div class="overlay"></div>
                     </a>
@@ -333,7 +295,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <img src="https://movatsteste.000webhostapp.com/imagens/camisa2.png" id="img_promo" class="img-fluid" alt="">
+                <img src="/imagens/camisa2.png" id="img_promo" class="img-fluid" alt="">
             </div>
             <div class="col-md-6">
                 <div class="heading-section heading-section-white align-middle">
@@ -343,7 +305,7 @@
                 <p id="demo"></p>
                 <div class="text-deal">
                     <h4 style="line-height:1.0;" id="txt_promo">Personalize sua camisa até amanhã e <span style="font-weight:bold;">ganhe 50% de desconto!</span></h4>
-                    <p><a href="https://movatsteste.000webhostapp.com/crie_sua_camisa.html"><button type="button"  class="btn btn-secondary btn-lg" id="btn_home">Crie sua camisa!</button></a></p>
+                    <p><a href="/crie_sua_camisa.html"><button type="button"  class="btn btn-secondary btn-lg" id="btn_home">Crie sua camisa!</button></a></p>
 
                 </div>
             </div>
@@ -365,42 +327,42 @@
     <div class="container-fluid px-0">
         <div class="row no-gutters">
             <div class="col-md-4 col-lg-2 ftco-animate">
-                <a href="https://movatsteste.000webhostapp.com/imagens/bg2_.png" class="gallery image-popup img d-flex align-items-center" style="background-image: url(https://movatsteste.000webhostapp.com/imagens/bg2_.png);">
+                <a href="/imagens/bg2_.png" class="gallery image-popup img d-flex align-items-center" style="background-image: url(/imagens/bg2_.png);">
                     <div class="icon mb-4 d-flex align-items-center justify-content-center">
                         <i class="fas fa-plus-circle" style="color: rgba(255,255,255,0.8); font-size:20px;"></i>
                     </div>
                 </a>
             </div>
             <div class="col-md-4 col-lg-2 ftco-animate">
-                <a href="https://movatsteste.000webhostapp.com/imagens/bg4.png" class="gallery image-popup img d-flex align-items-center" style="background-image: url(https://movatsteste.000webhostapp.com/imagens/bg4.png);">
+                <a href="/imagens/bg4.png" class="gallery image-popup img d-flex align-items-center" style="background-image: url(/imagens/bg4.png);">
                     <div class="icon mb-4 d-flex align-items-center justify-content-center">
                         <i class="fas fa-plus-circle" style="color: rgba(255,255,255,0.8); font-size:20px;"></i>
                     </div>
                 </a>
             </div>
             <div class="col-md-4 col-lg-2 ftco-animate">
-                <a href="https://movatsteste.000webhostapp.com/imagens/alfaiate.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(https://movatsteste.000webhostapp.com/imagens/alfaiate.jpg);">
+                <a href="/imagens/alfaiate.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(/imagens/alfaiate.jpg);">
                     <div class="icon mb-4 d-flex align-items-center justify-content-center">
                         <i class="fas fa-plus-circle" style="color: rgba(255,255,255,0.8); font-size:20px;"></i>
                     </div>
                 </a>
             </div>
             <div class="col-md-4 col-lg-2 ftco-animate">
-                <a href="https://movatsteste.000webhostapp.com/imagens/camisa4.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(https://movatsteste.000webhostapp.com/imagens/camisa4.jpg);">
+                <a href="/imagens/camisa4.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(/imagens/camisa4.jpg);">
                     <div class="icon mb-4 d-flex align-items-center justify-content-center">
                         <i class="fas fa-plus-circle" style="color: rgba(255,255,255,0.8); font-size:20px;"></i>
                     </div>
                 </a>
             </div>
             <div class="col-md-4 col-lg-2 ftco-animate">
-                <a href="https://movatsteste.000webhostapp.com/imagens/img_home_baixo.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(https://movatsteste.000webhostapp.com/imagens/img_home_baixo.jpg);">
+                <a href="/imagens/img_home_baixo.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(/imagens/img_home_baixo.jpg);">
                     <div class="icon mb-4 d-flex align-items-center justify-content-center">
                         <i class="fas fa-plus-circle" style="color: rgba(255,255,255,0.8); font-size:20px;"></i>
                     </div>
                 </a>
             </div>
             <div class="col-md-4 col-lg-2 ftco-animate">
-                <a href="https://movatsteste.000webhostapp.com/imagens/bg3.png" class="gallery image-popup img d-flex align-items-center" style="background-image: url(https://movatsteste.000webhostapp.com/imagens/bg3.png); color:#fff;">
+                <a href="/imagens/bg3.png" class="gallery image-popup img d-flex align-items-center" style="background-image: url(/imagens/bg3.png); color:#fff;">
                     <div class="icon mb-4 d-flex align-items-center justify-content-center">
                         <i class="fas fa-plus-circle" style="color: rgba(255,255,255,0.8); font-size:20px;"></i>
                     </div>
