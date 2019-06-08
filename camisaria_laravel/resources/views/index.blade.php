@@ -108,23 +108,11 @@
         </div>
     </div>
 </div>
+
 <!-- FIM MODAL -->
-
-
-
-
-
-
-
-
-
-
 
 <section id="home-section" class="hero">
     <div class="home-slider owl-carousel">
-
-
-
         <div class="slider-item js-fullheight">
             <div class="overlay"></div>
             <div class="container-fluid p-0">
@@ -144,7 +132,6 @@
                 </div>
             </div>
         </div>
-
 
         <div class="slider-item js-fullheight">
             <div class="overlay"></div>
@@ -195,17 +182,10 @@
     <div class="container">
         <div class="row">
 
-
-
-
-
         </div>
 </section>
 
 <!-- FIM SESSÃO -->
-
-
-
 
 <!-- NOVA SESSÃO -->
 
@@ -221,7 +201,6 @@
     <div class="container">
         <div class="row">
 
-
             <!-- PRODUTO -->
 
             <div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
@@ -235,11 +214,8 @@
                             <div class="cat">
                                 <span>Modelo</span>
                             </div>
-
                         </div>
                         <h3>Defina o modelo, tecido e carcterísticas de sua camisa.</h3>
-
-
                     </div>
                 </div>
             </div>
@@ -270,7 +246,6 @@
 
             <!-- FIM PRODUTO -->
 
-
             <!-- PRODUTO -->
 
             <div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
@@ -295,7 +270,6 @@
 
             <!-- FIM PRODUTO -->
 
-
             <!-- PRODUTO -->
 
             <div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
@@ -312,22 +286,16 @@
 
                         </div>
                         <h3>Receba sua camisa personalizada em casa.</h3>
-
-
                     </div>
                 </div>
             </div>
 
             <!-- FIM PRODUTO -->
 
-
-
         </div>
 </section>
 
 <!-- FIM SESSÃO -->
-
-
 
 <section class="ftco-section ftco-deal bg-primary">
     <div class="container">
@@ -350,8 +318,6 @@
         </div>
     </div>
 </section>
-
-
 
 <section class="ftco-gallery">
     <div class="container">
@@ -411,8 +377,8 @@
 </section>
 @stop
 
-@section('scriptCustomizado')
 <script>
+  $(function(){
     // Set the date we're counting down to
     var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
 
@@ -441,6 +407,5 @@
             document.getElementById("demo").innerHTML = "EXPIRED";
         }
     }, 1000);
+  })
 </script>
-
-@stop

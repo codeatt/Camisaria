@@ -11389,11 +11389,14 @@ a.mouse-icon {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     border-radius: 50%;
-    -webkit-animation: 1.6s ease infinite wheel-up-down;
-    -moz-animation: 1.6s ease infinite wheel-up-down;
-    animation: 1.6s ease infinite wheel-up-down;
     color: #000000;
     font-size: 20px;
+}
+
+.mouse-icon {
+  -webkit-animation: 1.6s ease infinite wheel-up-down;
+  -moz-animation: 1.6s ease infinite wheel-up-down;
+  animation: 1.6s ease infinite wheel-up-down;
 }
 
 @-webkit-keyframes wheel-up-down {
@@ -12975,7 +12978,7 @@ textarea.form-control {
 .ftco-animate {
     opacity: 0;
     visibility: hidden;
-    
+
 }
 
 .bg-primary {
@@ -13221,7 +13224,7 @@ textarea.form-control {
     background: #dbcc8f;
     border-radius: 50%;
     position: relative;
-    
+
 }
 
 .ftco-footer-social li a span {
