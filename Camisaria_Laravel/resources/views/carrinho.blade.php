@@ -32,7 +32,7 @@ p#demo {
 }
 
 .ftco-section {
-    /*  padding: 7em 0; */
+    padding: 7em 0;
     position: relative;
 }
 
@@ -41,7 +41,7 @@ p#demo {
     border: none;
     color: #fff;
     border-radius: 7px;
-    width: 60%;
+    height: 60px;
     font-size: 16px;
     text-align: center;
 }
@@ -62,6 +62,7 @@ float: left;
 background: #dbcc8f;
 border-radius: 50%;
 position: relative;
+
 }
 </style>
 @stop

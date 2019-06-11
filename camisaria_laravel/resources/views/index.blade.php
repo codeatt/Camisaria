@@ -2,7 +2,46 @@
 
 @section('styleCustomizado')
 <style>
+span.text:hover {
+    color: #dbcc8f;
+}
 
+.login .social .circle {
+    color: #FFFFFF;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px;
+}
+
+.modal-title {
+    margin-bottom: 0;
+    line-height: 1.5;
+    position: absolute;
+    left: 25px;
+    font-size: 18px;
+}
+
+p#demo {
+    text-align: left;
+    font-size: 48px;
+    margin-top: 0px;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 0px;
+}
+.ftco-footer-social li a {
+padding-left: 12px !important;
+padding-top: 12px !important;
+height: 50px;
+width: 50px;
+display: block;
+float: left;
+background: #dbcc8f;
+border-radius: 50%;
+position: relative;
+
+}
 </style>
 @stop
 
@@ -86,8 +125,7 @@
                             <div class="horizontal">
                                 <h1 class="mb-4 mt-3">Camisas Personalizadas</h1>
                                 <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country.</p>
-
-                                <p><a href="/crie_sua_camisa.html" class="btn-custom">Crie sua camisa!</a></p>
+                                <p><a href="/crie_sua_camisa" class="btn-custom">Crie sua camisa!</a></p>
                             </div>
                         </div>
                     </div>
@@ -107,22 +145,15 @@
                                 <h1 class="mb-4 mt-3">Camisas Personalizadas</h1>
                                 <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country.</p>
 
-                                <p><a href="/crie_sua_camisa.html" class="btn-custom">Crie sua camisa!</a></p>
+                                <p><a href="/crie_sua_camisa" class="btn-custom">Crie sua camisa!</a></p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
-
     </div>
 </section>
-
-
-
-
 
 <!-- QUEM SOMOS -->
 
@@ -135,7 +166,6 @@
                     Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections
                     1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum,
                     "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-
                 <p> The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied
                     by English versions from the 1914 translation by H. Rackham.</p>
             </div>
@@ -197,11 +227,8 @@
                             <div class="cat">
                                 <span>Medidas</span>
                             </div>
-
                         </div>
                         <h3>Insira suas medidas, de acordo com o informado no site.</h3>
-
-
                     </div>
                 </div>
             </div>
@@ -221,11 +248,8 @@
                             <div class="cat">
                                 <span>Confecção</span>
                             </div>
-
                         </div>
                         <h3>Sua camisa será confeccionada em até 7 dias úteis.</h3>
-
-
                     </div>
                 </div>
             </div>
@@ -245,7 +269,6 @@
                             <div class="cat">
                                 <span>Entrega</span>
                             </div>
-
                         </div>
                         <h3>Receba sua camisa personalizada em casa.</h3>
                     </div>
@@ -273,8 +296,7 @@
                 <p id="demo"></p>
                 <div class="text-deal">
                     <h4 style="line-height:1.0;" id="txt_promo">Personalize sua camisa até amanhã e <span style="font-weight:bold;">ganhe 50% de desconto!</span></h4>
-                    <p><a href="/crie_sua_camisa.html"><button type="button"  class="btn btn-secondary btn-lg" id="btn_home">Crie sua camisa!</button></a></p>
-
+                    <p><a href="/crie_sua_camisa"><button type="button"  class="btn btn-secondary btn-lg" id="btn_home">Crie sua camisa!</button></a></p>
                 </div>
             </div>
         </div>
@@ -339,36 +361,3 @@
 </section>
 
 @stop
-
-<script>
-  $(function(){
-    // Set the date we're counting down to
-    var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
-
-    // Update the count down every 1 second
-    var x = setInterval(function() {
-
-        // Get today's date and time
-        var now = new Date().getTime();
-
-        // Find the distance between now and the count down date
-        var distance = countDownDate - now;
-
-        // Time calculations for days, hours, minutes and seconds
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        // Output the result in an element with id="demo"
-        document.getElementById("demo").innerHTML = hours + "h " +
-            minutes + "m " + seconds + "s ";
-
-        // If the count down is over, write some text
-        if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("demo").innerHTML = "EXPIRED";
-        }
-    }, 1000);
-  })
-</script>

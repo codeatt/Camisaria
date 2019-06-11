@@ -21,6 +21,4 @@ Route::get('/contato ','camisariaController@contatoCamisaria');
 
 Route::get('/carrinho ','camisariaController@carrinhoCamisaria');
 
-
-
-Route::get('/checkout ','camisariaController@homeCamisaria');
+Route::get('/checkout ','camisariaController@checkoutCamisaria');

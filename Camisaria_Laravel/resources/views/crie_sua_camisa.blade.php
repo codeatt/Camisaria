@@ -2,7 +2,25 @@
 
 @section('styleCustomizado')
 <style>
+span.text:hover {
+    color: #dbcc8f;
+}
 
+.login .social .circle {
+    color: #FFFFFF;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px;
+}
+
+.modal-title {
+    margin-bottom: 0;
+    line-height: 1.5;
+    position: absolute;
+    left: 25px;
+    font-size: 18px;
+}
 
 p#demo {
     text-align: left;
@@ -34,7 +52,18 @@ p#demo {
     color: #fff;
 }
 
+.ftco-footer-social li a {
+padding-left: 12px !important;
+padding-top: 12px !important;
+height: 50px;
+width: 50px;
+display: block;
+float: left;
+background: #dbcc8f;
+border-radius: 50%;
+position: relative;
 
+}
 </style>
 @stop
 

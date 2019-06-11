@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-
+@section('styleCustomizado')
 <style>
 span.text:hover {
     color: #dbcc8f;
@@ -52,52 +52,6 @@ p#demo {
     color: #fff;
 }
 
-.preenchido {
-    padding-top: 15px;
-    font-weight: bolder;
-    vertical-align: middle;
-    border: 1px solid rgba(0, 0, 0, 0.1) !important;
-    height: 58px !important;
-    padding-left: 15px;
-    padding-right: 15px;
-    font-size: 14px;
-}
-
-.btn.btn-primary {
-    background: #dbcc8f;
-    border: none;
-    color: #fff;
-    border-radius: 7px;
-    width: 100%;
-    height: 60px;
-    font-size: 16px;
-    text-align: center;
-    outline: none !important;
-}
-
-.btn.btn-primary:hover {
-    background-color: #222222 !important;
-    color: #fff;
-    outline: none !important;
-}
-
-.btn.btn-primary:focus,
-.btn.btn-primary:focus-within,
-.btn.btn-primary:active {
-    background-color: #222222;
-    color: #fff;
-    outline: none !important;
-}
-
-.btn-primary:not(:disabled):not(.disabled):active,
-.btn-primary:not(:disabled):not(.disabled).active,
-.show>.btn-primary.dropdown-toggle {
-    color: #fff;
-    background-color: #222222;
-    border-color: none;
-    outline: none !important;
-}
-
 .ftco-footer-social li a {
 padding-left: 12px !important;
 padding-top: 12px !important;
@@ -111,6 +65,7 @@ position: relative;
 
 }
 </style>
+@stop
 
 @section('content')
 
@@ -167,11 +122,11 @@ position: relative;
             <div class="modal-footer">
                 <div class="forgot login-footer">
                     <span>Deseja
-          <a href="/cadastro"><span style="color:#dbcc8f;">criar uma conta</span></a>
+          <a href="https://movatsteste.000webhostapp.com/cadastro.html"><span style="color:#dbcc8f;">criar uma conta</span></a>
                     ?</span>
                 </div>
                 <div class="forgot register-footer" style="display:none">
-                    <a href="/cadastro"><span>Ainda não é cadastrado?</span></a>
+                    <a href="https://movatsteste.000webhostapp.com/cadastro.html"><span>Ainda não é cadastrado?</span></a>
                     <a href="javascript: showLoginForm();">Entrar</a>
                 </div>
             </div>
@@ -185,8 +140,8 @@ position: relative;
     <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
             <div class="col-md-9 ftco-animate text-center">
-                <p class="breadcrumbs"><span class="mr-2"><a href="/" style="color:#fff;">Home</a></span> <span style="color:#fff;">Cadastro</span></p>
-                <h1 class="mb-0 bread" style="color:#dbcc8f !important; ">Cadastro</h1>
+                <p class="breadcrumbs"><span class="mr-2"><a href="https://movatsteste.000webhostapp.com/index.html" style="color:#fff;">Home</a></span> <span style="color:#fff;">checkout</span></p>
+                <h1 class="mb-0 bread" style="color:#dbcc8f !important; ">Checkout</h1>
             </div>
         </div>
     </div>
@@ -197,95 +152,157 @@ position: relative;
         <div class="row justify-content-center">
             <div class="col-xl-10 ftco-animate">
                 <form action="#" class="billing-form">
-                    <h3 class="mb-4 billing-heading">Cadastro</h3>
+                    <h3 class="mb-4 billing-heading">Detalhes da Compra</h3>
                     <div class="row align-items-end">
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="firstname">Nome</label>
-                                <input type="text" class="form-control" placeholder="">
+                                <div class="preenchido">Marcos</div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="lastname">Sobrenome</label>
-                                <input type="text" class="form-control" placeholder="">
+                                <div class="preenchido">Vicente</div>
                             </div>
                         </div>
                         <div class="w-100"></div>
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label for="country">Estado</label>
-                                <div class="select-wrap">
-                                    <div class="icon"><i class="fas fa-sort-down"></i></div>
-                                    <select name="" id="" class="form-control">
-                                      <option value="">São Paulo</option>
-                                      <option value="">Rio de Janeiro</option>
-                                      <option value="">Belo Horizonte</option>
-                                      <option value="">Porto Alegre</option>
-                                      <option value="">Brasilia</option>
-                                    </select>
-                                </div>
+                                <div class="preenchido">São Paulo</div>
                             </div>
                         </div>
                         <div class="w-100"></div>
-                        <div class="col-md-6">
+
+                        <div class="col-md-12">
                             <div class="form-group">
-                                <label for="streetaddress">Endereço</label>
-                                <input type="text" class="form-control" placeholder="Informe seu endereço">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Complemento (opcional)">
+                                <div class="preenchido">Nome da rua, 00</div>
                             </div>
                         </div>
                         <div class="w-100"></div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="towncity">Cidade</label>
-                                <input type="text" class="form-control" placeholder="">
+                                <div class="preenchido">São Paulo</div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="postcodezip">CEP</label>
-                                <input type="text" class="form-control" placeholder="">
+                                <div class="preenchido">00000000000</div>
                             </div>
                         </div>
                         <div class="w-100"></div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="phone">Telefone</label>
-                                <input type="text" class="form-control" placeholder="">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="emailaddress">Email</label>
-                                <input type="text" class="form-control" placeholder="">
-                            </div>
-                        </div>
+
                         <div class="w-100"></div>
                         <div class="col-md-12">
                             <div class="form-group mt-4">
                                 <div class="radio">
-                                    <label class="mr-3"><input type="radio" name="optradio"> Deseja receber newsletters? </label>
-                                    <label><input type="radio" name="optradio"> Declaro que li e aceito os termos e condições.</label>
+                                    <label class="mr-3"><input type="radio" name="optradio"> Deseja receber futuros comunicados? </label>
+                                    <label><input type="radio" name="optradio"> Enviar o pedido para o endereço cadastrado?</label>
                                 </div>
                             </div>
-                            <p><a href="/checkout" class="btn btn-primary py-3 px-4">Cadastrar</a></p>
                         </div>
-
                     </div>
                 </form>
 
-                <!-- END -->
+                <!-- FORM END -->
 
+                <div class="row mt-5 pt-3 d-flex">
+                    <div class="col-md-6 d-flex">
+                        <div class="cart-detail cart-total bg-light p-3 p-md-4">
+                            <h3 class="billing-heading mb-4">Total da Compra</h3>
+                            <p class="d-flex">
+                                <span>Sub Total</span>
+                                <span>R$20.60</span>
+                            </p>
+                            <p class="d-flex">
+                                <span>Frete</span>
+                                <span>R$5.00</span>
+                            </p>
+                            <p class="d-flex">
+                                <span>Desconto</span>
+                                <span>R$3.00</span>
+                            </p>
+                            <hr>
+                            <p class="d-flex total-price">
+                                <span>Total</span>
+                                <span>R$22.60</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="cart-detail bg-light p-3 p-md-4">
+                            <h3 class="billing-heading mb-4">Formas de Pagamento</h3>
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio" class="mr-2"> Transferência Eletrônica</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio" class="mr-2"> Boleto</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio" class="mr-2"> Cartão de Crédito</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" class="mr-2"> Declaro que li e aceito os termos e condições.</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <p><a href="#" class="btn btn-primary py-3 px-4" data-toggle="modal" data-target="#loginModal2">Finalizar o Pedido</a></p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- .col-md-8 -->
         </div>
     </div>
 </section>
-<!-- .section -->
+
+<!-- END section -->
+
+<!-- Modal -->
+
+<div class="modal fade login" id="loginModal2" aria-labelledby="loginModal2">
+    <div class="modal-dialog login animated">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="box">
+                    <div class="content">
+                        <div class="social">
+                            <h4 class="modal-title" style="text-align:center;">Pedido realizado com sucesso!</h4>
+                            <div class="division">
+                                <div class="line l"></div>
+                            </div>
+                            <h1 style="font-weight:bold; color:#fff;">1903932-0392</h1>
+                            <p>Em breve você recebrá um e-mail com os detalhes da compra!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FIM MODAL -->
 
 @stop
