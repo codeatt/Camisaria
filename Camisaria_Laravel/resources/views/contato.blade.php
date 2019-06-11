@@ -3,7 +3,6 @@
 @section('styleCustomizado')
 <style>
 
-
 .ftco-section {
     /*  padding: 7em 0; */
     position: relative;
