@@ -122,11 +122,11 @@ position: relative;
                 <div class="modal-footer">
                     <div class="forgot login-footer">
                         <span>Deseja
-							<a href="https://movatsteste.000webhostapp.com/cadastro.html"><span style="color:#dbcc8f;">criar uma conta</span></a>
+							<a href="/cadastro"><span style="color:#dbcc8f;">criar uma conta</span></a>
                         ?</span>
                     </div>
                     <div class="forgot register-footer" style="display:none">
-                        <a href="https://movatsteste.000webhostapp.com/cadastro.html"><span>Ainda não é cadastrado?</span></a>
+                        <a href="/cadastro"><span>Ainda não é cadastrado?</span></a>
                         <a href="javascript: showLoginForm();">Entrar</a>
                     </div>
                 </div>
@@ -141,7 +141,7 @@ position: relative;
         <div class="container">
             <div class="row no-gutters slider-text align-items-center justify-content-center">
                 <div class="col-md-9 ftco-animate text-center">
-                    <p class="breadcrumbs"><span class="mr-2"><a href="https://movatsteste.000webhostapp.com/index.html" style="color:#fff;">Home</a></span> <span style="color:#fff;">carrinho</span></p>
+                    <p class="breadcrumbs"><span class="mr-2"><a href="/" style="color:#fff;">Home</a></span> <span style="color:#fff;">carrinho</span></p>
                     <h1 class="mb-0 bread" style="color:#dbcc8f !important; ">Meu Carrinho</h1>
                 </div>
             </div>
@@ -239,7 +239,7 @@ position: relative;
                             <span>R$364.60</span>
                         </p>
                     </div>
-                    <p class="text-center"><a href="https://movatsteste.000webhostapp.com/checkout.html" class="btn btn-primary py-3 px-4">Realizar a Compra</a></p>
+                    <p class="text-center"><a href="/checkout" class="btn btn-primary py-3 px-4">Realizar a Compra</a></p>
                 </div>
             </div>
         </div>

@@ -327,7 +327,7 @@ position: relative;
                             <p style="color: #000;">80 piece available</p>
                         </div>
                     </div>
-                    <p><a href="/carrinho.html" class="btn btn-primary py-3 px-5">Comprar</a></p>
+                    <p><a href="/carrinho" class="btn btn-primary py-3 px-5">Comprar</a></p>
                 </div>
             </div>
 
