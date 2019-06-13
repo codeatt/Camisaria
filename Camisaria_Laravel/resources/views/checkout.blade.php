@@ -136,7 +136,7 @@ position: relative;
 
 <!-- FIM MODAL -->
 
-<div class="hero-wrap hero-bread" style="background-image: url('https://movatsteste.000webhostapp.com/imagens/bg2_.png'); background-size: cover; background-position: top;">
+<div class="hero-wrap hero-bread" style="background-image: url('/imagens/bg2_.png'); background-size: cover; background-position: top;">
     <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
             <div class="col-md-9 ftco-animate text-center">
