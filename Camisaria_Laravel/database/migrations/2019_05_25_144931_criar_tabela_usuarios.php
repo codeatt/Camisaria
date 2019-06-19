@@ -17,7 +17,7 @@ class CriarTabelaUsuarios extends Migration
             $table->bigIncrements('usuario_id');
             $table->string('nome',100);
             $table->string('email',100);
-            $table->string('senha',1000);
+            $table->string('senha')->nullable();
         });
     }
 

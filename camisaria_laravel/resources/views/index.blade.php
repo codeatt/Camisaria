@@ -46,71 +46,6 @@ position: relative;
 @stop
 
 @section('content')
-<div class="modal fade login" id="loginModal" aria-labelledby="loginModal">
-    <div class="modal-dialog login animated">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title">Entrar com</h4>
-            </div>
-            <div class="modal-body">
-                <div class="box">
-                    <div class="content">
-                        <div class="social">
-                            <a class="circle github" href="#">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a id="google_login" class="circle google" href="#">
-                                <i class="fab fa-google-plus-g"></i>
-                            </a>
-                            <a id="facebook_login" class="circle facebook" href="#">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        </div>
-                        <div class="division">
-                            <div class="line l"></div>
-                            <span>ou</span>
-                            <div class="line r"></div>
-                        </div>
-                        <div class="error"></div>
-                        <div class="form loginBox">
-                            <form method="" action="" accept-charset="UTF-8">
-                                <input id="email" class="form-control" type="text" placeholder="Email" name="email">
-                                <input id="password" class="form-control" type="password" placeholder="Senha" name="password">
-                                <input class="btn btn-default btn-login" type="button" value="Entrar" onclick="loginAjax()">
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="content registerBox" style="display:none;">
-                        <div class="form">
-                            <form method="" html="{:multipart=>true}" data-remote="true" action="" accept-charset="UTF-8">
-                                <input id="email" class="form-control" type="text" placeholder="Email" name="email">
-                                <input id="password" class="form-control" type="password" placeholder="Senha" name="password">
-                                <input id="password_confirmation" class="form-control" type="password" placeholder="Repita sua senha" name="password_confirmation">
-                                <input class="btn btn-default btn-register" type="button" value="Criar conta" name="commit">
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <div class="forgot login-footer">
-                    <span>Deseja
-          <a href="/cadastro"><span style="color:#dbcc8f;">criar uma conta</span></a>
-                    ?</span>
-                </div>
-                <div class="forgot register-footer" style="display:none">
-                    <a href="/cadastro"><span>Ainda não é cadastrado?</span></a>
-                    <a href="javascript: showLoginForm();">Entrar</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- FIM MODAL -->
 
 <section id="home-section" class="hero">
     <div class="home-slider owl-carousel">
@@ -124,7 +59,7 @@ position: relative;
                             <span class="subheading">#APROVEITE!</span>
                             <div class="horizontal">
                                 <h1 class="mb-4 mt-3">Camisas Personalizadas</h1>
-                                <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country.</p>
+                                <p class="mb-4">Oferecemos uma vasta gama de combinações, que permitem total liberdade para que você crie a camisa que mais se adeque ao seu estilo.</p>
                                 <p><a href="/crie_sua_camisa" class="btn-custom">Crie sua camisa!</a></p>
                             </div>
                         </div>
@@ -143,7 +78,7 @@ position: relative;
                             <span class="subheading">#APROVEITE!</span>
                             <div class="horizontal">
                                 <h1 class="mb-4 mt-3">Camisas Personalizadas</h1>
-                                <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country.</p>
+                                <p class="mb-4">A partir da obtenção de suas medidas, através do nosso prático procedimento online, sua camisa é confeccionada respeitando a forma de seu corpo, minimizando imperfeições e acentuando atributos positivos.</p>
 
                                 <p><a href="/crie_sua_camisa" class="btn-custom">Crie sua camisa!</a></p>
                             </div>
