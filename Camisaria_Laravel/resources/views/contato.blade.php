@@ -23,7 +23,13 @@
     background-color: #222222;
     color: #fff;
 }
+button.mfp-arrow.mfp-arrow-left.mfp-prevent-close, button.mfp-arrow.mfp-arrow-right.mfp-prevent-close {
+    outline: none;
+}
 
+.mfp-arrow-right:after {
+    border-left: 27px solid #3F3F3F;
+    
 
 </style>
 @stop
@@ -45,7 +51,7 @@
 
     <section class="ftco-section contact-section bg-light">
         <div class="container">
-            <div class="row d-flex mb-5 contact-info">
+            <div class="row d-flex mb-5 contact-info"  style="position: relative; top: 20px;">
                 <div class="w-100"></div>
                 <div class="col-md-3 d-flex">
                     <div class="info bg-white p-4">
@@ -101,8 +107,8 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8 heading-section text-center mb-4 ftco-animate">
-                    <h2 class="mb-4">Clientes satisfeitos!</h2>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
+                    <h2 class="mb-4">&nbsp;</h2>
+                    <!-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p> -->
                 </div>
             </div>
         </div>
