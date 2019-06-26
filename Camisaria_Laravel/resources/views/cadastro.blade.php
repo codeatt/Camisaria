@@ -1,5 +1,6 @@
 @extends('layouts.master')
 
+@section('pagina_titulo', '- Cadastro')
 
 <style>
 span.text:hover {
@@ -114,6 +115,33 @@ position: relative;
 
 @section('content')
 
+<!-- Vericação de erros -->
+@if (count($errors) > 0)
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+            <li>{{ $error}}</li>
+            @endforeach
+        </ul>
+        @endif
+</div>
+
+<!-- Vericação de sucesso no cadastro [Alternativa]-->
+
+<!-- @if(session('success'))
+    <div class="alert alert-success">
+        {{ session('success') }}
+    </div>
+@endif -->
+
+<!-- Vericação de erros [Alternativa]-->
+
+<!-- @if(session('error'))
+    <div class="alert alert-danger">
+        {{ session('error') }}
+    </div>
+@endif -->
+
 <!-- Modal -->
 <div class="modal fade login" id="loginModal" aria-labelledby="loginModal">
     <div class="modal-dialog login animated">
@@ -196,7 +224,7 @@ position: relative;
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-xl-10 ftco-animate">
-                <form action="#" class="billing-form">
+                <form method="POST "action="{{ route('register') }}" class="billing-form">
                     <h3 class="mb-4 billing-heading">Cadastro</h3>
                     <div class="row align-items-end">
                         <div class="col-md-6">
@@ -274,6 +302,7 @@ position: relative;
                                 </div>
                             </div>
                             <p><a href="/checkout" class="btn btn-primary py-3 px-4">Cadastrar</a></p>
+                            <button class="btn btn-primary py-3 px-4" type="submit">Criar minha conta</button>
                         </div>
 
                     </div>

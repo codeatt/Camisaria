@@ -3,6 +3,7 @@
 
 <head>
     <title>A Camisaria</title>
+    <title>A Camisaria @yield('pagina_titulo')</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -177,6 +178,7 @@
                                 <i class="fab fa-google-plus-g"></i>
                             </a>
                             <a id="facebook_login" class="circle facebook" href="/auth/facebook">
+                            <a id="facebook_login" class="circle facebook" href="{{ url('/auth/facebook')}}">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
                         </div>

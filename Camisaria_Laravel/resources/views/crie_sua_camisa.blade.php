@@ -1,4 +1,5 @@
 @extends('layouts.master')
+@section('pagina_titulo', '- Crie sua Camisa')
 
 @section('styleCustomizado')
 <style>

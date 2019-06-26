@@ -1,4 +1,5 @@
 @extends('layouts.master')
+@section('pagina_titulo', '- Checkout')
 
 @section('styleCustomizado')
 <style>
