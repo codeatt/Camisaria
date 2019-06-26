@@ -111,10 +111,13 @@ border-radius: 50%;
 position: relative;
 
 }
+
+
 </style>
 
 @section('content')
 
+<<<<<<< HEAD
 <!-- Vericação de erros -->
 @if (count($errors) > 0)
     <div class="alert alert-danger">
@@ -206,6 +209,8 @@ position: relative;
         </div>
     </div>
 </div>
+=======
+>>>>>>> d0a5d25843efbd061e9bf7b7cedeab8fe18cc249
 
 <!-- FIM MODAL -->
 
