@@ -75,10 +75,10 @@ button.mfp-arrow.mfp-arrow-right.mfp-prevent-close {
                                 <p class="mb-4">Oferecemos uma vasta gama de combinações, que permitem total liberdade
                                     para que você crie a camisa que mais se adeque ao seu estilo.</p>
 
-                               <a href="/crie_sua_camisa" class="btn-custom">Crie sua camisa!</a><br><br>
-                                      <a href="/#passo_a_passo" class="btn2" >Passo a Passo</a>
+                                <a href="/crie_sua_camisa" class="btn-custom">Crie sua camisa!</a><br><br>
+                                <a href="/#passo_a_passo" class="btn2">Passo a Passo</a>
 
-                               
+
 
 
                             </div>
@@ -103,8 +103,8 @@ button.mfp-arrow.mfp-arrow-right.mfp-prevent-close {
                                 <p class="mb-4">A partir da obtenção de suas medidas, através do nosso prático
                                     procedimento online, sua camisa é confeccionada respeitando a forma de seu corpo,
                                     minimizando imperfeições e acentuando atributos positivos.</p>
-                                    <a href="/crie_sua_camisa" class="btn-custom">Crie sua camisa!</a><br><br>
-                                      <a href="/#passo_a_passo" class="btn2" >Passo a Passo</a>
+                                <a href="/crie_sua_camisa" class="btn-custom">Crie sua camisa!</a><br><br>
+                                <a href="/#passo_a_passo" class="btn2">Passo a Passo</a>
                             </div>
                         </div>
                     </div>
@@ -127,8 +127,8 @@ button.mfp-arrow.mfp-arrow-right.mfp-prevent-close {
                                 <h1 class="mb-4 mt-3">Camisas Sob Medida!</h1>
                                 <p class="mb-4">Oferecemos uma vasta gama de combinações, que permitem total liberdade
                                     para que você crie a camisa que mais se adeque ao seu estilo.</p>
-                                    <a href="/crie_sua_camisa" class="btn-custom">Crie sua camisa!</a><br><br>
-                                      <a href="/#passo_a_passo" class="btn2" >Passo a Passo</a>
+                                <a href="/crie_sua_camisa" class="btn-custom">Crie sua camisa!</a><br><br>
+                                <a href="/#passo_a_passo" class="btn2">Passo a Passo</a>
                             </div>
                         </div>
                     </div>
@@ -208,11 +208,6 @@ button.mfp-arrow.mfp-arrow-right.mfp-prevent-close {
                         <a id="saiba_mais" data-toggle="modal" data-target="#passo_a_passo_l"
                             style="cursor: pointer; color:#000;"><i class="far fa-question-circle"></i> Saiba Mais</a>
                     </div>
-
-
-
-
-
 
                 </div>
             </div>
@@ -384,6 +379,15 @@ button.mfp-arrow.mfp-arrow-right.mfp-prevent-close {
 
 
 
+
+
+<!--   MODAIS -->
+
+
+
+
+
+
 <!-- Modal PASSO 1 -->
 <div class="modal fade login" id="passo_a_passo_l" aria-labelledby="passo_a_passo_l">
     <div class="modal-dialog login animated" style="width:100%;">
@@ -395,159 +399,820 @@ button.mfp-arrow.mfp-arrow-right.mfp-prevent-close {
             <div class="modal-body">
                 <div class="box">
                     <div class="content">
-                        <a data-toggle="tooltip" title="<img src='http://getbootstrap.com/apple-touch-icon.png' />">
-                            <h4 style="color:#fff;">TECIDO DA CAMISA</h4>
 
-                        </a>
-                        <div> <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true"
-                                title="animal<br><img src=&quot;https://placeimg.com/100/100/animals&quot;>">
-                                Tooltip with Image
+                        <!-- ITEM 1 -->
+
+                        <h4 style=" color:#fff;">Modelo</h4>
+                            <p>Defina o corte e caimento de sua camisa</p>
+                        <div>
+                           
+                           
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
                             </button>
-                            <div class="tooltip-demo">
-
-                                <a title="<h3>You may use headings</h3> <a href='https://www.jquery-az.com/'>Links</a> images as well <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"
-                                    data-html="true" rel="tooltip" href="#">Bring mouse over this text!</a>.
-
-                            </div>
-
-
-                            <button type="button" class="btn btn-info" data-toggle="tooltip" data-html="true"
-                                title="<p>Use Paragraph of text</p> <a href='https://www.jquery-az.com/'>Links</a> <br/> and image <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"">
- 
-                            The example of Tooltip with HTML
                             
+                            
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
                             </button>
+                            
+
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
 
                         </div>
 
+                        <hr style=" border-color:gray; margin-bottom:15px !important; margin-top:15px !important;">
 
 
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aliquid, nulla in quaerat
-                            maxime saepe harum sed sint nobis non esse mollitia similique quidem facilis porro quasi!
-                            Nam, a veritatis.</p>
-                        <hr style=" color:#fff;">
-                                <div class="error"></div>
-                                <div class="form loginBox">
-                                    <form method="" action="" accept-charset="UTF-8">
-                                        <input id="email" class="form-control" type="text" placeholder="Email"
-                                            name="email">
-                                        <input id="password" class="form-control" type="password" placeholder="Senha"
-                                            name="password">
-                                        <input class="btn btn-default btn-login" type="button" value="Entrar"
-                                            onclick="loginAjax()">
-                                    </form>
-                                </div>
+                        <!-- FIM ITEM 1 -->
+
+
+                        <!-- ITEM 2 -->
+
+                        <h4 style=" color:#fff;">Modelo</h4>
+                            <p>Defina o corte e caimento de sua camisa</p>
+                        <div>
+                           
+                           
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+                            
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+
                         </div>
-                    </div>
-                    <div class="box">
-                        <div class="content registerBox" style="display:none;">
-                            <div class="form">
-                                <form method="POST" html="{:multipart=>true}" data-remote="true" action=""
-                                    accept-charset="UTF-8">
-                                    <input id="email" class="form-control" type="text" placeholder="Email" name="email">
-                                    <input id="password" class="form-control" type="password" placeholder="Senha"
-                                        name="password">
-                                    <input id="password_confirmation" class="form-control" type="password"
-                                        placeholder="Repita sua senha" name="password_confirmation">
-                                    <input class="btn btn-default btn-register" type="button" value="Criar conta"
-                                        name="commit">
-                                </form>
-                            </div>
+
+                        <hr style=" border-color:gray; margin-bottom:15px !important; margin-top:15px !important;">
+
+                        <!-- FIM ITEM 2 -->
+
+
+                        <!-- ITEM 3 -->
+
+                        <h4 style=" color:#fff;">Modelo</h4>
+                            <p>Defina o corte e caimento de sua camisa</p>
+                        <div>
+                           
+                           
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+                            
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+
                         </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <div class="forgot login-footer">
-                        <span>Deseja
-                            <a data-toggle="modal" data-target="#passo_a_passo_2"><span style="color:#dbcc8f;">Passo
-                                    2</span></a>
-                            ?</span>
-                    </div>
-                    <div class="forgot register-footer" style="display:none">
-                        <a href="/cadastro"><span>Ainda não é cadastrado?</span></a>
-                        <a data-toggle="modal" data-target="#passo_a_passo_2">Passo 2</a>
+
+                        <hr style=" border-color:gray; margin-bottom:15px !important; margin-top:15px !important;">
+
+
+                        <!-- FIM ITEM 3 -->
+
+
+
+                        <!-- ITEM 4 -->
+
+                        <h4 style=" color:#fff;">Modelo</h4>
+                            <p>Defina o corte e caimento de sua camisa</p>
+                        <div>
+                           
+                           
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+                            
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+
+                        </div>
+
+                        <hr style=" border-color:gray; margin-bottom:15px !important; margin-top:15px !important;">
+
+                        <!-- FIM ITEM 4 -->
+
+
+
                     </div>
                 </div>
             </div>
+
+            <div class="modal-footer">
+                <div class="forgot login-footer">
+                    <span>
+                        <a data-toggle="modal" data-target="#passo_a_passo_2"><span style="color:#dbcc8f;">Passo 2</span></a>
+                    </span>
+                </div>
+             </div>
+
         </div>
     </div>
+</div>
 
-    <!-- FIM MODAL -->
+<!-- FIM MODAL -->
 
 
 
-    <!-- Modal PASSO 2-->
-    <div class="modal fade login" id="passo_a_passo_2" aria-labelledby="passo_a_passo_2">
-        <div class="modal-dialog login animated">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title">PASSO A PASSO 2</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="box">
-                        <div class="content">
-                            <div class="social">
-                                <a class="circle github" href="/auth/github">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a id="google_login" class="circle google" href="#">
-                                    <i class="fab fa-google-plus-g"></i>
-                                </a>
-                                <a id="facebook_login" class="circle facebook" href="/auth/facebook">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                            </div>
-                            <div class="division">
-                                <div class="line l"></div>
-                                <span>ou</span>
-                                <div class="line r"></div>
-                            </div>
-                            <div class="error"></div>
-                            <div class="form loginBox">
-                                <form method="" action="" accept-charset="UTF-8">
-                                    <input id="email" class="form-control" type="text" placeholder="Email" name="email">
-                                    <input id="password" class="form-control" type="password" placeholder="Senha"
-                                        name="password">
-                                    <input class="btn btn-default btn-login" type="button" value="Entrar"
-                                        onclick="loginAjax()">
-                                </form>
-                            </div>
+<!-- Modal PASSO 2 -->
+<div class="modal fade login" id="passo_a_passo_2" aria-labelledby="passo_a_passo_2">
+    <div class="modal-dialog login animated" style="width:100%;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h5 class="modal-title">Passo 2</h5>
+            </div>
+            <div class="modal-body">
+                <div class="box">
+                    <div class="content">
+
+                        <!-- ITEM 1 -->
+
+                        <h4 style=" color:#fff;">Modelo</h4>
+                            <p>Defina o corte e caimento de sua camisa</p>
+                        <div>
+                           
+                           
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+                            
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+
                         </div>
-                    </div>
-                    <div class="box">
-                        <div class="content registerBox" style="display:none;">
-                            <div class="form">
-                                <form method="POST" html="{:multipart=>true}" data-remote="true" action=""
-                                    accept-charset="UTF-8">
-                                    <input id="email" class="form-control" type="text" placeholder="Email" name="email">
-                                    <input id="password" class="form-control" type="password" placeholder="Senha"
-                                        name="password">
-                                    <input id="password_confirmation" class="form-control" type="password"
-                                        placeholder="Repita sua senha" name="password_confirmation">
-                                    <input class="btn btn-default btn-register" type="button" value="Criar conta"
-                                        name="commit">
-                                </form>
-                            </div>
+
+                        <hr style=" border-color:gray; margin-bottom:15px !important; margin-top:15px !important;">
+
+
+                        <!-- FIM ITEM 1 -->
+
+
+                        <!-- ITEM 2 -->
+
+                        <h4 style=" color:#fff;">Modelo</h4>
+                            <p>Defina o corte e caimento de sua camisa</p>
+                        <div>
+                           
+                           
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+                            
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+
                         </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <div class="forgot login-footer">
-                        <span>Deseja
-                            <a href="/cadastro"><span style="color:#dbcc8f;">criar uma conta</span></a>
-                            ?</span>
-                    </div>
-                    <div class="forgot register-footer" style="display:none">
-                        <a href="/cadastro"><span>Ainda não é cadastrado?</span></a>
-                        <a class="dropdown-item" data-toggle="modal" data-target="#passo_a_passo_2">Passo 2</a>
+
+                        <hr style=" border-color:gray; margin-bottom:15px !important; margin-top:15px !important;">
+
+                        <!-- FIM ITEM 2 -->
+
+
+                        <!-- ITEM 3 -->
+
+                        <h4 style=" color:#fff;">Modelo</h4>
+                            <p>Defina o corte e caimento de sua camisa</p>
+                        <div>
+                           
+                           
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+                            
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+
+                        </div>
+
+                        <hr style=" border-color:gray; margin-bottom:15px !important; margin-top:15px !important;">
+
+
+                        <!-- FIM ITEM 3 -->
+
+
+
+                        <!-- ITEM 4 -->
+
+                        <h4 style=" color:#fff;">Modelo</h4>
+                            <p>Defina o corte e caimento de sua camisa</p>
+                        <div>
+                           
+                           
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+                            
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+
+                        </div>
+
+                        <hr style=" border-color:gray; margin-bottom:15px !important; margin-top:15px !important;">
+
+                        <!-- FIM ITEM 4 -->
+
+
+
                     </div>
                 </div>
             </div>
+
+            <div class="modal-footer">
+                <div class="forgot login-footer">
+                    <span>
+                        <a data-toggle="modal" data-target="#passo_a_passo_3"><span style="color:#dbcc8f;">Passo 3</span></a>
+                    </span>
+                </div>
+             </div>
+
         </div>
     </div>
+</div>
 
-    <!-- FIM MODAL -->
+<!-- FIM MODAL -->
 
 
-    @stop
+
+<!-- Modal PASSO 3-->
+<div class="modal fade login" id="passo_a_passo_3" aria-labelledby="passo_a_passo_3">
+    <div class="modal-dialog login animated" style="width:100%;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h5 class="modal-title">Passo 3</h5>
+            </div>
+            <div class="modal-body">
+                <div class="box">
+                    <div class="content">
+
+                        <!-- ITEM 1 -->
+
+                        <h4 style=" color:#fff;">Modelo</h4>
+                            <p>Defina o corte e caimento de sua camisa</p>
+                        <div>
+                           
+                           
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+                            
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+
+                        </div>
+
+                        <hr style=" border-color:gray; margin-bottom:15px !important; margin-top:15px !important;">
+
+
+                        <!-- FIM ITEM 1 -->
+
+
+                        <!-- ITEM 2 -->
+
+                        <h4 style=" color:#fff;">Modelo</h4>
+                            <p>Defina o corte e caimento de sua camisa</p>
+                        <div>
+                           
+                           
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+                            
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+
+                        </div>
+
+                        <hr style=" border-color:gray; margin-bottom:15px !important; margin-top:15px !important;">
+
+                        <!-- FIM ITEM 2 -->
+
+
+                        <!-- ITEM 3 -->
+
+                        <h4 style=" color:#fff;">Modelo</h4>
+                            <p>Defina o corte e caimento de sua camisa</p>
+                        <div>
+                           
+                           
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+                            
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+
+                        </div>
+
+                        <hr style=" border-color:gray; margin-bottom:15px !important; margin-top:15px !important;">
+
+
+                        <!-- FIM ITEM 3 -->
+
+
+
+                        <!-- ITEM 4 -->
+
+                        <h4 style=" color:#fff;">Modelo</h4>
+                            <p>Defina o corte e caimento de sua camisa</p>
+                        <div>
+                           
+                           
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+                            
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+
+                        </div>
+
+                        <hr style=" border-color:gray; margin-bottom:15px !important; margin-top:15px !important;">
+
+                        <!-- FIM ITEM 4 -->
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <div class="forgot login-footer">
+                    <span>
+                        <a data-toggle="modal" data-target="#passo_a_passo_4"><span style="color:#dbcc8f;">Passo 4</span></a>
+                    </span>
+                </div>
+             </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- FIM MODAL -->
+
+
+<!-- Modal PASSO 4-->
+<div class="modal fade login" id="passo_a_passo_4" aria-labelledby="passo_a_passo_4">
+    <div class="modal-dialog login animated" style="width:100%;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h5 class="modal-title">Passo 4</h5>
+            </div>
+            <div class="modal-body">
+                <div class="box">
+                    <div class="content">
+
+                        <!-- ITEM 1 -->
+
+                        <h4 style=" color:#fff;">Modelo</h4>
+                            <p>Defina o corte e caimento de sua camisa</p>
+                        <div>
+                           
+                           
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+                            
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+
+                        </div>
+
+                        <hr style=" border-color:gray; margin-bottom:15px !important; margin-top:15px !important;">
+
+
+                        <!-- FIM ITEM 1 -->
+
+
+                        <!-- ITEM 2 -->
+
+                        <h4 style=" color:#fff;">Modelo</h4>
+                            <p>Defina o corte e caimento de sua camisa</p>
+                        <div>
+                           
+                           
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+                            
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+
+                        </div>
+
+                        <hr style=" border-color:gray; margin-bottom:15px !important; margin-top:15px !important;">
+
+                        <!-- FIM ITEM 2 -->
+
+
+                        <!-- ITEM 3 -->
+
+                        <h4 style=" color:#fff;">Modelo</h4>
+                            <p>Defina o corte e caimento de sua camisa</p>
+                        <div>
+                           
+                           
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+                            
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+
+                        </div>
+
+                        <hr style=" border-color:gray; margin-bottom:15px !important; margin-top:15px !important;">
+
+
+                        <!-- FIM ITEM 3 -->
+
+
+
+                        <!-- ITEM 4 -->
+
+                        <h4 style=" color:#fff;">Modelo</h4>
+                            <p>Defina o corte e caimento de sua camisa</p>
+                        <div>
+                           
+                           
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+                            
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+
+                            <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
+                                data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Ultra Slim</span></p>
+                                Caimento bem enxuto, a camisa fica bem próxima ao corpo. Recomendada para pessoa bem magras e em boa forma física.<br><br>
+                                <img src='https://www.jquery-az.com/wp-content/uploads/2015/10/logo.jpg' width='175'>"> Ultra Slim
+                            </button>
+                            
+
+                        </div>
+
+                        <hr style=" border-color:gray; margin-bottom:15px !important; margin-top:15px !important;">
+
+                        <!-- FIM ITEM 4 -->
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <div class="forgot login-footer">
+                    <!-- <span>
+                        <a data-toggle="modal" data-target="#passo_a_passo_2"><span style="color:#dbcc8f;">Passo 2</span></a>
+                    </span> -->
+                </div>
+             </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- FIM MODAL -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@stop
