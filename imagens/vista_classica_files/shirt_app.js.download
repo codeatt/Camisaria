@@ -1,0 +1,105 @@
+(function($) {
+
+    $.fn.shirtApp = function(opcoes) {
+		// Configurações
+		var configuracoes = $.extend({
+			caminho_imagem: "assets/images/camisa/",
+			//camadas: ["modelo","caimento","colarinho","rigidez","acabamento","bolso","vista","punho","comprimento","marca"],
+			camadas: new Array(),
+			camadas_z: new Array(),
+			camadas_obj: $("body").find("*[data-shirt]"),
+			camadas_extra: new Array(),
+			camadas_extra_obj: $("body").find("*[data-shirt-extra]"),
+			container_inputs: "#inputs"
+		}, opcoes);
+		var $container = this;
+
+		_init();
+
+		function _init(){
+			// Gera as camadas
+			_geraArrayCamada();
+			_geraCamada();
+
+			// Bind em todos os inputs
+			$(configuracoes.container_inputs).on("click","input",function(){
+				if($(this).is(':checked')){
+					var nome = $(this).attr("name");
+					if(typeof _buscaImagem(nome) !== "undefined")
+						$container.find(".camada."+nome).html('<img src="'+configuracoes.caminho_imagem+_buscaImagem(nome)+'">');
+					var extra = $(this).data("shirt-extra");
+					if (typeof extra !== typeof undefined && extra !== false) {
+						$container.find(".camada."+nome+"_extra").html('<img src="'+configuracoes.caminho_imagem+_buscaImagemExtra(nome)+'">');
+					}
+					if(nome == 'comprimento-da-manga'){
+						if($(this).val() == 'Curta'){
+							$(".curta_hide").find("input").removeAttr('checked');
+							$(".curta_hide").slideUp(200);
+							$(".camada.punho img").attr("src","assets/images/camisa/dfe9fc269314d002023af93230992dc6.png");
+						}else{
+							$(".curta_hide").find("input:first").attr('checked','checked').click();
+							$(".curta_hide").find("input:first").attr('checked','checked').click();
+							$(".curta_hide").slideDown(200);
+						}
+					}
+				}
+			});
+		}
+
+		function _geraArrayCamada(){
+			// Camadas comuns
+			configuracoes.camadas_obj.each(function(){
+				var name = $(this).attr("name");
+				var ordem = $(this).data("shirt-z");
+				if($.inArray(name,configuracoes.camadas) == -1){
+					configuracoes.camadas.push(name);
+					configuracoes.camadas_z.push(ordem);
+				}
+			});
+			// Camadas extras
+			configuracoes.camadas_extra_obj.each(function(){
+				var name = $(this).attr("name");
+				if($.inArray(name,configuracoes.camadas_extra) == -1){
+					configuracoes.camadas_extra.push(name);
+				}
+			});
+		}
+
+		function _geraCamada(){
+			$container.css("position","relative");
+			// Camadas comuns
+			var index = configuracoes.camadas.length;
+			configuracoes.camadas.forEach(function(nome){
+				index--;
+				var nome_index = configuracoes.camadas.indexOf(nome);
+				nome_index = configuracoes.camadas_z[nome_index];
+				camada = '<div class="camada '+nome+'" style="z-index:'+nome_index+';">';
+				if(typeof _buscaImagem(nome) !== "undefined")
+					camada += '<img src="'+configuracoes.caminho_imagem+_buscaImagem(nome)+'" alt="'+nome+'">';
+				camada += '</div>';
+				$container.append(camada);
+			});
+			// Camadas extras
+			var index = configuracoes.camadas_extra.length+configuracoes.camadas.length;
+			configuracoes.camadas_extra.forEach(function(nome){
+				index++;
+				camada = '<div class="camada '+nome+'_extra" style="z-index:'+index+';">';
+				if(typeof _buscaImagem(nome) !== "undefined")
+					camada += '<img src="'+configuracoes.caminho_imagem+_buscaImagemExtra(nome)+'" alt="'+nome+'">';
+				camada += '</div>';
+				$container.append(camada);
+			});
+		}
+
+		function _buscaImagem(nome){
+			return $("body").find("*[name='"+nome+"']:checked").data("shirt");
+		}
+
+		function _buscaImagemExtra(nome){
+			return $("body").find("*[name='"+nome+"']:checked").data("shirt-extra");
+		}
+
+
+	}
+
+}(jQuery));

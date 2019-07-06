@@ -14713,3 +14713,13 @@ a#saiba_mais:hover{
     border-radius: 4px;
     display:inline-block;
 }
+
+
+body::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+
+::-webkit-scrollbar {
+    width: 0px;
+  }
