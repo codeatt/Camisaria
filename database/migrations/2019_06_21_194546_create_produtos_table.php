@@ -13,16 +13,16 @@ class CreateProdutosTable extends Migration
      */
     public function up()
     {
-      Schema::create('produtos', function (Blueprint $table) {
-          $table->increments('id');
-          $table->string('name', 30);
-          $table->text('description')->nullable();
-          $table->string('quantity');
-          $table->decimal('price', 5, 2);
-          $table->string('imagem', 50);
-          $table->timestamps();
-          $table->softDeletes();
-      });
+      // Schema::create('produtos', function (Blueprint $table) {
+      //     $table->increments('id');
+      //     $table->string('name', 30);
+      //     $table->text('description')->nullable();
+      //     $table->string('quantity');
+      //     $table->decimal('price', 5, 2);
+      //     $table->string('imagem', 50);
+      //     $table->timestamps();
+      //     $table->softDeletes();
+      // });
 
     }
 

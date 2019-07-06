@@ -117,7 +117,6 @@ position: relative;
 
 @section('content')
 
-<<<<<<< HEAD
 <!-- Vericação de erros -->
 @if (count($errors) > 0)
     <div class="alert alert-danger">
@@ -151,12 +150,12 @@ position: relative;
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title">Entrar com</h4>
+                <h4 class="modal-title">Entrar</h4>
             </div>
             <div class="modal-body">
                 <div class="box">
                     <div class="content">
-                        <div class="social">
+                        <!-- <div class="social">
                             <a class="circle github" href="#">
                                 <i class="fab fa-github"></i>
                             </a>
@@ -166,12 +165,12 @@ position: relative;
                             <a id="facebook_login" class="circle facebook" href="#">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
-                        </div>
-                        <div class="division">
+                        </div> -->
+                        <!-- <div class="division">
                             <div class="line l"></div>
                             <span>ou</span>
                             <div class="line r"></div>
-                        </div>
+                        </div> -->
                         <div class="error"></div>
                         <div class="form loginBox">
                             <form method="" action="" accept-charset="UTF-8">
@@ -198,23 +197,21 @@ position: relative;
             <div class="modal-footer">
                 <div class="forgot login-footer">
                     <span>Deseja
-          <a href="/cadastro"><span style="color:#dbcc8f;">criar uma conta</span></a>
+          <a href=""><span style="color:#dbcc8f;">criar uma conta</span></a>
                     ?</span>
                 </div>
                 <div class="forgot register-footer" style="display:none">
-                    <a href="/cadastro"><span>Ainda não é cadastrado?</span></a>
+                    <a href=""><span>Ainda não é cadastrado?</span></a>
                     <a href="javascript: showLoginForm();">Entrar</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-=======
->>>>>>> d0a5d25843efbd061e9bf7b7cedeab8fe18cc249
 
 <!-- FIM MODAL -->
 
-<div class="hero-wrap hero-bread" style="background-image: url('/imagens/bg2_.png'); background-size: cover; background-position: top;">
+<!-- <div class="hero-wrap hero-bread" style="background-image: url('/imagens/bg2_.png'); background-size: cover; background-position: top;">
     <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
             <div class="col-md-9 ftco-animate text-center">
@@ -223,22 +220,23 @@ position: relative;
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 <section class="ftco-section">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-xl-10 ftco-animate">
-                <form method="POST "action="{{ route('register') }}" class="billing-form">
+                <form method="POST" action="{{ route('cadastro.store') }}" class="billing-form">
+                  @csrf
                     <h3 class="mb-4 billing-heading">Cadastro</h3>
                     <div class="row align-items-end">
-                        <div class="col-md-6">
+                        <!-- <div class="col-md-6">
                             <div class="form-group">
                                 <label for="firstname">Nome</label>
                                 <input type="text" class="form-control" placeholder="">
                             </div>
-                        </div>
-                        <div class="col-md-6">
+                        </div> -->
+                        <!-- <div class="col-md-6">
                             <div class="form-group">
                                 <label for="lastname">Sobrenome</label>
                                 <input type="text" class="form-control" placeholder="">
@@ -260,8 +258,8 @@ position: relative;
                                 </div>
                             </div>
                         </div>
-                        <div class="w-100"></div>
-                        <div class="col-md-6">
+                        <div class="w-100"></div> -->
+                        <!-- <div class="col-md-6">
                             <div class="form-group">
                                 <label for="streetaddress">Endereço</label>
                                 <input type="text" class="form-control" placeholder="Informe seu endereço">
@@ -272,44 +270,49 @@ position: relative;
                                 <input type="text" class="form-control" placeholder="Complemento (opcional)">
                             </div>
                         </div>
-                        <div class="w-100"></div>
-                        <div class="col-md-6">
+                        <div class="w-100"></div> -->
+                        <!-- <div class="col-md-6">
                             <div class="form-group">
                                 <label for="towncity">Cidade</label>
                                 <input type="text" class="form-control" placeholder="">
                             </div>
-                        </div>
-                        <div class="col-md-6">
+                        </div> -->
+                        <!-- <div class="col-md-6">
                             <div class="form-group">
                                 <label for="postcodezip">CEP</label>
                                 <input type="text" class="form-control" placeholder="">
                             </div>
-                        </div>
-                        <div class="w-100"></div>
+                        </div> -->
+                        <!-- <div class="w-100"></div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="phone">Telefone</label>
                                 <input type="text" class="form-control" placeholder="">
                             </div>
+                        </div> -->
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input name="email" type="text" class="form-control" placeholder="meuemail@email.com">
+                            </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="emailaddress">Email</label>
-                                <input type="text" class="form-control" placeholder="">
+                                <label for="password">Senha</label>
+                                <input name="password" type="text" class="form-control" placeholder="minhasenha">
                             </div>
                         </div>
                         <div class="w-100"></div>
                         <div class="col-md-12">
-                            <div class="form-group mt-4">
+                            <!-- <div class="form-group mt-4">
                                 <div class="radio">
                                     <label class="mr-3"><input type="radio" name="optradio"> Deseja receber newsletters? </label>
                                     <label><input type="radio" name="optradio"> Declaro que li e aceito os termos e condições.</label>
                                 </div>
-                            </div>
-                            <p><a href="/checkout" class="btn btn-primary py-3 px-4">Cadastrar</a></p>
+                            </div> -->
+                            <!-- <p><a href="/checkout" class="btn btn-primary py-3 px-4">Cadastrar</a></p> -->
                             <button class="btn btn-primary py-3 px-4" type="submit">Criar minha conta</button>
                         </div>
-
                     </div>
                 </form>
 
