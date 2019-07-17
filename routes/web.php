@@ -19,12 +19,16 @@ Route::get('/home', 'HomeController@index')->name('home');
 // Montando Produto
 Route::get('/crie_sua_camisa ','camisariaController@crieCamisaria');
 
-// Cadastro 2
+// Cadastro 2 (funcional, mas apenas para visualizar, será substituído pelo definitivo)
 Route::get('cadastro', 'CadastroController@create')->name('cadastro.create');
 Route::post('cadastro', 'CadastroController@store')->name('cadastro.store');
 
-Route::get('/register', 'RegistrationController@create');
-Route::post('register', 'RegistrationController@store');
+// Cadastro teste funcionou
+Route::get('form', 'FormController@create')->name('form.create');
+Route::post('form', 'FormController@store')->name('form.store');
+
+// Login teste
+Route::get('/profile/{user}', 'ProfilesController@index')->name('profile.show');
 
 // Comprando Controler 1
 Route::get('/carrinho ','camisariaController@carrinhoCamisaria');
