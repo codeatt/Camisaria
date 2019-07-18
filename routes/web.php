@@ -4,26 +4,23 @@ Auth::routes();
 
 // Página Inicial
 Route::get('/ ','camisariaController@homeCamisaria');
-
+// Página Logado
 Route::get('/home', 'HomeController@index')->name('home');
+
+// Cadastro & Login
+Route::resource('/cadastros', 'UsuarioController');
+
+// Criandoo acesso Admin
+Route::group(array('namespace' => 'Admin', 'prefix' => 'admin'), function() {
+  Route::resource('ideas', 'AdminIdeaController');
+});
+
+Route::get('/admin', 'AdminController@admin')
+    ->middleware('is_admin')
+    ->name('admin');
 
 // Montando Produto
 Route::get('/crie_sua_camisa ','camisariaController@crieCamisaria');
-
-// Cadastro 2 (funcional, mas apenas para visualizar, será substituído pelo definitivo)
-Route::get('cadastro', 'CadastroController@create')->name('cadastro.create');
-Route::post('cadastro', 'CadastroController@store')->name('cadastro.store');
-
-Route::resource('/cadastros', 'UsuarioController');
-
-// Login teste
-Route::get('/profile/{user}', 'ProfilesController@index')->name('profile.show');
-
-// Comprando Controler 1
-Route::get('/carrinho ','camisariaController@carrinhoCamisaria');
-
-// Comprando Controler 2
-Route::get('/carrinho ','carrinhoController@index')->name('carrinho.index');
 
 // Concluindo compra
 Route::get('/checkout ','camisariaController@checkoutCamisaria');
