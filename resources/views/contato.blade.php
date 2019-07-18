@@ -77,29 +77,35 @@ button.mfp-arrow.mfp-arrow-left.mfp-prevent-close, button.mfp-arrow.mfp-arrow-ri
             </div>
             <div class="row block-9">
                 <div class="col-md-6 order-md-last d-flex">
-                    <form action="#" class="bg-white p-5 contact-form">
+               
+                    <form action="/php/mail.php" id="myForm" class="bg-white p-5 contact-form" method="post">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Nome">
+                            <input type="text" class="form-control" placeholder="Nome" name="nome">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Email">
+                            <input type="text" class="form-control" placeholder="Email" name="email">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Assunto">
+                            <input type="text" class="form-control" placeholder="Assunto" name="assunto">
                         </div>
                         <div class="form-group">
-                            <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Mensagem"></textarea>
+                            <textarea name="mensagem" id="" cols="30" rows="7" class="form-control" placeholder="Mensagem"></textarea>
                         </div>
                         <div class="form-group">
-                            <input type="submit" value="Enviar" class="btn btn-primary py-3 px-5">
+                            <input type="submit" value="Enviar" name="submit" class="btn btn-primary py-3 px-5">
                         </div>
                     </form>
+
+    
+    
 
                 </div>
 
                 <div class="col-md-6 d-flex">
-                    <div id="map" class="bg-white"></div>
-                </div>
+
+                <iframe width="100%" height="100%"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.050976600197!2d-46.67744558439356!3d-23.602504668999522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50ab7e792ef9%3A0x1eaad4d76eaaf389!2sAv.+Dr.+Cardoso+de+Melo%2C+90+-+Vila+Ol%C3%ADmpia%2C+S%C3%A3o+Paulo+-+SP!5e0!3m2!1spt-BR!2sbr!4v1563423593950!5m2!1spt-BR!2sbr" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+   
             </div>
         </div>
     </section>

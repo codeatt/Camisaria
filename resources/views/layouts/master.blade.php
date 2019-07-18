@@ -74,13 +74,10 @@
                     <li class="nav-item  active"><a href="/#a_camisaria" class="nav-link">Quem Somos</a></li>
                     <li class="nav-item"><a href="/crie_sua_camisa" class="nav-link">Crie Sua Camisa</a></li>
                     <li class="nav-item"><a href="/contato" class="nav-link">Contato</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-sign-in-alt"></i>&nbsp;Entrar</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdown04">
-                            <a class="dropdown-item" data-toggle="modal" data-target="#loginModal">Entrar</a>
-                            <a class="dropdown-item" href="/cadastro">Criar minha conta</a>
-                        </div>
-                    </li>
+                    <li class="nav-item"><a href="/login" class="nav-link"><i class="fas fa-sign-in-alt"></i>&nbsp;Entrar</a></li>
+                    <li class="nav-item"><a href="/cadastro" class="nav-link"><i class="fas fa-user-edit"></i>&nbsp;Cadastro</a></li>
+                   
+                   
                 </ul>
 
             </div>
@@ -249,6 +246,8 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 <script src="/js/google-map.js"></script>
 <script src="/js/main.js"></script>
+<script src="/js/mail-script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 
 
 

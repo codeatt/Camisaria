@@ -2758,7 +2758,7 @@ fieldset:disabled a.btn {
 .btn-primary:focus,
 .btn-primary.focus {
     -webkit-box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
-    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+    box-shadow: 0 0 0 0rem rgba(38, 143, 255, 0.5);
 }
 
 .btn-primary.disabled,
@@ -11006,7 +11006,7 @@ h5,
 .ftco-navbar-light {
     background: transparent !important;
     position: absolute;
-    top: 20px;
+    top: 40px;
     left: 0;
     right: 0;
     z-index: 3;
@@ -11053,7 +11053,7 @@ h5,
 }
 
 .ftco-navbar-light .navbar-nav>.nav-item>.nav-link {
-    font-size: 10px;
+    font-size: 12px;
     padding-left: 20px;
     padding-right: 20px;
     font-weight: 400;
@@ -12270,7 +12270,7 @@ a.mouse-icon {
     background: #fff;
     -webkit-box-shadow: inset 0px 0px 101px 21px rgba(0, 0, 0, 0.09);
     -moz-box-shadow: inset 0px 0px 101px 21px rgba(0, 0, 0, 0.09);
-    box-shadow: inset 0px 0px 101px 21px rgba(0, 0, 0, 0.09);
+    box-shadow: inset 0px 0px 101px 21px rgba(0, 0, 0, 0);
     height: 100%;
     display: block;
 }
@@ -12354,7 +12354,7 @@ a.mouse-icon {
 
 .product-details .form-group .icon {
     position: absolute;
-    top: 50%;
+    top: 65%;
     right: 20px;
     font-size: 14px;
     -webkit-transform: translateY(-50%);
@@ -12369,7 +12369,7 @@ a.mouse-icon {
 
 @media (max-width: 767.98px) {
     .product-details .form-group .icon {
-        right: 10px;
+        right: 0px;
     }
 }
 
@@ -12378,12 +12378,13 @@ a.mouse-icon {
 }
 
 .product-details .form-group .select-wrap select {
-    font-size: 13px;
+    font-size: 12px;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     text-transform: uppercase;
     letter-spacing: 2px;
+    width:300px;
 }
 
 .nav-pills {

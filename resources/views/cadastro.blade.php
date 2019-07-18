@@ -290,13 +290,13 @@ position: relative;
                                 <input type="text" class="form-control" placeholder="">
                             </div>
                         </div> -->
-                        <div class="col-md-6">
+                        <div class="col-md-pull-3 col-md-6 col-md-offset-3">
                             <div class="form-group">
                                 <label for="email">Email</label>
                                 <input name="email" type="text" class="form-control" placeholder="meuemail@email.com">
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                             <div class="form-group">
                                 <label for="password">Senha</label>
                                 <input name="password" type="text" class="form-control" placeholder="minhasenha">
