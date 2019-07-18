@@ -210,11 +210,11 @@
             <div class="modal-footer">
                 <div class="forgot login-footer">
                     <span>Deseja
-          <a href="/cadastro"><span style="color:#dbcc8f;">criar uma conta</span></a>
+          <a href="/cadastros"><span style="color:#dbcc8f;">criar uma conta</span></a>
                     ?</span>
                 </div>
                 <div class="forgot register-footer" style="display:none">
-                    <a href="/cadastro"><span>Ainda não é cadastrado?</span></a>
+                    <a href="/cadastros"><span>Ainda não é cadastrado?</span></a>
                     <a href="javascript: showLoginForm();">Entrar</a>
                 </div>
             </div>

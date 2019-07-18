@@ -1,15 +1,6 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+Auth::routes();
 
 // Página Inicial
 Route::get('/ ','camisariaController@homeCamisaria');
@@ -23,9 +14,7 @@ Route::get('/crie_sua_camisa ','camisariaController@crieCamisaria');
 Route::get('cadastro', 'CadastroController@create')->name('cadastro.create');
 Route::post('cadastro', 'CadastroController@store')->name('cadastro.store');
 
-// Cadastro teste funcionou
-Route::get('form', 'FormController@create')->name('form.create');
-Route::post('form', 'FormController@store')->name('form.store');
+Route::resource('/cadastros', 'UsuarioController');
 
 // Login teste
 Route::get('/profile/{user}', 'ProfilesController@index')->name('profile.show');
@@ -44,8 +33,6 @@ Route::get('/contato ','camisariaController@contatoCamisaria');
 
 // Provider
 //Direciona para o facebook
-Route::get('/auth/{provider}','Auth\LoginController@redirectToProvider');
+// Route::get('/auth/{provider}','Auth\LoginController@redirectToProvider');
 //Receber a rota do facebook
-Route::get('/auth/{provider}/callback', 'Auth\LoginController@handleProviderCallback');
-
-Auth::routes();
+// Route::get('/auth/{provider}/callback', 'Auth\LoginController@handleProviderCallback');

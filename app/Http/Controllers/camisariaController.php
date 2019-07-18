@@ -15,7 +15,6 @@ class camisariaController extends Controller
     public function contatoCamisaria (){
         return view('contato');
     }
-    
     public function carrinhoCamisaria (){
         return view('carrinho');
     }
