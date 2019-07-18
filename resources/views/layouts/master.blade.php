@@ -78,7 +78,7 @@
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-sign-in-alt"></i>&nbsp;Entrar</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown04">
                             <a class="dropdown-item" data-toggle="modal" data-target="#loginModal">Entrar</a>
-                            <a class="dropdown-item" href="/cadastro">Criar minha conta</a>
+                            <a class="dropdown-item" href="/cadastros">Criar minha conta</a>
                         </div>
                     </li>
                 </ul>
@@ -213,11 +213,11 @@
             <div class="modal-footer">
                 <div class="forgot login-footer">
                     <span>Deseja
-          <a href="/cadastro"><span style="color:#dbcc8f;">criar uma conta</span></a>
+          <a href="/cadastros"><span style="color:#dbcc8f;">criar uma conta</span></a>
                     ?</span>
                 </div>
                 <div class="forgot register-footer" style="display:none">
-                    <a href="/cadastro"><span>Ainda não é cadastrado?</span></a>
+                    <a href="/cadastros"><span>Ainda não é cadastrado?</span></a>
                     <a href="javascript: showLoginForm();">Entrar</a>
                 </div>
             </div>
