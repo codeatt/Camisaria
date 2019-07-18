@@ -53,6 +53,21 @@ p#demo {
     color: #fff;
 }
 
+.ftco-navbar-light .navbar-nav>.nav-item>.nav-link {
+    font-size: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 400;
+    color: #000 !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 1 !important;
+}
+
+
+
+
+
 .preenchido {
     padding-top: 15px;
     font-weight: bolder;
@@ -144,70 +159,7 @@ position: relative;
     </div>
 @endif -->
 
-<!-- Modal -->
-<div class="modal fade login" id="loginModal" aria-labelledby="loginModal">
-    <div class="modal-dialog login animated">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title">Entrar</h4>
-            </div>
-            <div class="modal-body">
-                <div class="box">
-                    <div class="content">
-                        <!-- <div class="social">
-                            <a class="circle github" href="#">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a id="google_login" class="circle google" href="#">
-                                <i class="fab fa-google-plus-g"></i>
-                            </a>
-                            <a id="facebook_login" class="circle facebook" href="#">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        </div> -->
-                        <!-- <div class="division">
-                            <div class="line l"></div>
-                            <span>ou</span>
-                            <div class="line r"></div>
-                        </div> -->
-                        <div class="error"></div>
-                        <div class="form loginBox">
-                            <form method="" action="" accept-charset="UTF-8">
-                                <input id="email" class="form-control" type="text" placeholder="Email" name="email">
-                                <input id="password" class="form-control" type="password" placeholder="Senha" name="password">
-                                <input class="btn btn-default btn-login" type="button" value="Entrar" onclick="loginAjax()">
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="content registerBox" style="display:none;">
-                        <div class="form">
-                            <form method="POST" html="{:multipart=>true}" data-remote="true" action="" accept-charset="UTF-8">
-                                <input id="email" class="form-control" type="text" placeholder="Email" name="email">
-                                <input id="password" class="form-control" type="password" placeholder="Senha" name="password">
-                                <input id="password_confirmation" class="form-control" type="password" placeholder="Repita sua senha" name="password_confirmation">
-                                <input class="btn btn-default btn-register" type="button" value="Criar conta" name="commit">
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <div class="forgot login-footer">
-                    <span>Deseja
-          <a href=""><span style="color:#dbcc8f;">criar uma conta</span></a>
-                    ?</span>
-                </div>
-                <div class="forgot register-footer" style="display:none">
-                    <a href=""><span>Ainda não é cadastrado?</span></a>
-                    <a href="javascript: showLoginForm();">Entrar</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+
 
 <!-- FIM MODAL -->
 
@@ -230,13 +182,13 @@ position: relative;
                   @csrf
                     <h3 class="mb-4 billing-heading">Cadastro</h3>
                     <div class="row align-items-end">
-                        <!-- <div class="col-md-6">
+                        <div class="col-md-12">
                             <div class="form-group">
                                 <label for="firstname">Nome</label>
                                 <input type="text" class="form-control" placeholder="">
                             </div>
-                        </div> -->
-                        <!-- <div class="col-md-6">
+                        </div> 
+                        <div class="col-md-12">
                             <div class="form-group">
                                 <label for="lastname">Sobrenome</label>
                                 <input type="text" class="form-control" placeholder="">
@@ -258,8 +210,8 @@ position: relative;
                                 </div>
                             </div>
                         </div>
-                        <div class="w-100"></div> -->
-                        <!-- <div class="col-md-6">
+                        <div class="w-100"></div>
+                        <div class="col-md-6">
                             <div class="form-group">
                                 <label for="streetaddress">Endereço</label>
                                 <input type="text" class="form-control" placeholder="Informe seu endereço">
@@ -270,26 +222,26 @@ position: relative;
                                 <input type="text" class="form-control" placeholder="Complemento (opcional)">
                             </div>
                         </div>
-                        <div class="w-100"></div> -->
-                        <!-- <div class="col-md-6">
+                        <div class="w-100"></div>
+                        <div class="col-md-6">
                             <div class="form-group">
                                 <label for="towncity">Cidade</label>
                                 <input type="text" class="form-control" placeholder="">
                             </div>
-                        </div> -->
-                        <!-- <div class="col-md-6">
+                        </div>
+                        <div class="col-md-6">
                             <div class="form-group">
                                 <label for="postcodezip">CEP</label>
                                 <input type="text" class="form-control" placeholder="">
                             </div>
-                        </div> -->
-                        <!-- <div class="w-100"></div>
+                        </div>
+                        <div class="w-100"></div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="phone">Telefone</label>
                                 <input type="text" class="form-control" placeholder="">
                             </div>
-                        </div> -->
+                        </div>
                         <div class="col-md-pull-3 col-md-6 col-md-offset-3">
                             <div class="form-group">
                                 <label for="email">Email</label>
@@ -303,16 +255,27 @@ position: relative;
                             </div>
                         </div>
                         <div class="w-100"></div>
-                        <div class="col-md-12">
-                            <!-- <div class="form-group mt-4">
+                        <!-- <div class="col-md-12">
+                         <div class="form-group mt-4">
                                 <div class="radio">
                                     <label class="mr-3"><input type="radio" name="optradio"> Deseja receber newsletters? </label>
                                     <label><input type="radio" name="optradio"> Declaro que li e aceito os termos e condições.</label>
                                 </div>
-                            </div> -->
-                            <!-- <p><a href="/checkout" class="btn btn-primary py-3 px-4">Cadastrar</a></p> -->
-                            <button class="btn btn-primary py-3 px-4" type="submit">Criar minha conta</button>
+                            </div>
+                            
+                          
+                        </div> -->
+
+
+
+                        <div class="col-md-6 col-lg-6">
+                        <button class="btn btn-primary py-3 px-4 " style="margin-top:2em;" type="submit">Criar minha conta</button>
                         </div>
+
+                        <div class="col-md-6 col-lg-6">
+                        <p style="margin-bottom: 0rem; margin-top:2em;"><a href="/checkout" class="btn btn-primary py-3 px-4  ">Cadastrar</a></p>
+                        </div>
+
                     </div>
                 </form>
 

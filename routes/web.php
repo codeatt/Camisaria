@@ -31,6 +31,8 @@ Route::get('/checkout ','camisariaController@checkoutCamisaria');
 // Contato
 Route::get('/contato ','camisariaController@contatoCamisaria');
 
+
+
 // Provider
 //Direciona para o facebook
 // Route::get('/auth/{provider}','Auth\LoginController@redirectToProvider');
