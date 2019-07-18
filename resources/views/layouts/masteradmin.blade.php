@@ -70,37 +70,12 @@
 
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav ml-auto">
-                  <li class="nav-item  active"><a href="/#a_camisaria" class="nav-link">Quem Somos</a></li>
-                  <li class="nav-item"><a href="/crie_sua_camisa" class="nav-link">Crie Sua Camisa</a></li>
-                  <li class="nav-item"><a href="/contato" class="nav-link">Contato</a></li>
-                  @guest
-                      <li class="nav-item" >
-                          <a  class="nav-link" href="{{ route('login') }}">><i class="fas fa-sign-in-alt"></i>&nbsp;{{ __('Entrar') }}</a>
-                      </li>
-                      @if (Route::has('register'))
-                          <li class="nav-item">
-                              <a class="nav-link" href="{{ route('register') }}"<i class="fas fa-user-edit"></i>&nbsp;>{{ __('Cadastro') }}</a>
-                          </li>
-                      @endif
-                  @else
-                      <li class="nav-item dropdown">
-                          <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                              {{ Auth::user()->name }} <span class="caret"></span>
-                          </a>
 
-                          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                              <a class="dropdown-item" href="{{ route('logout') }}"
-                                 onclick="event.preventDefault();
-                                               document.getElementById('logout-form').submit();">
-                                  {{ __('Logout') }}
-                              </a>
-
-                              <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                  @csrf
-                              </form>
-                          </div>
-                      </li>
-                  @endguest
+                    <li class="nav-item  active"><a href="/#a_camisaria" class="nav-link">Quem Somos</a></li>
+                    <li class="nav-item"><a href="/crie_sua_camisa" class="nav-link">Crie Sua Camisa</a></li>
+                    <li class="nav-item"><a href="/contato" class="nav-link">Contato</a></li>
+                    <li class="nav-item"><a href="/login" class="nav-link"><i class="fas fa-sign-in-alt"></i>&nbsp;Entrar</a></li>
+                    <li class="nav-item"><a href="/cadastros" class="nav-link"><i class="fas fa-user-edit"></i>&nbsp;Cadastro</a></li>
 
                 </ul>
 

@@ -7,17 +7,18 @@ Route::get('/ ','camisariaController@homeCamisaria');
 // Página Logado
 Route::get('/home', 'HomeController@index')->name('home');
 
-// Cadastro & Login
+// Cadastros & Login
 Route::resource('/cadastros', 'UsuarioController');
 
-// Criandoo acesso Admin
-Route::group(array('namespace' => 'Admin', 'prefix' => 'admin'), function() {
-  Route::resource('ideas', 'AdminIdeaController');
-});
+// Criando acesso Crie sua camisa
+// Route::group(['middleware' => ['auth', 'user']], function () {
+//     Route::get('/crie_sua_camisa ','camisariaController@crieCamisaria');
+// });
 
-Route::get('/admin', 'AdminController@admin')
-    ->middleware('is_admin')
-    ->name('admin');
+// Criando acesso ADMIN_CRUD usuarios
+// Route::group(['middleware' => ['auth', 'admin']], function () {
+//     Route::get('/usuarios','UsuarioController@index');
+// });
 
 // Montando Produto
 Route::get('/crie_sua_camisa ','camisariaController@crieCamisaria');
@@ -27,6 +28,12 @@ Route::get('/checkout ','camisariaController@checkoutCamisaria');
 
 // Contato
 Route::get('/contato ','camisariaController@contatoCamisaria');
+
+//Carrinho
+Route::get('/carrinho ','camisariaController@carrinhoCamisaria');
+Route::post('/carrinho ','camisariaController@carrinhoCamisaria');
+
+// Route::get('/carrinho ','carrinhoController@index')->name('carrinho.index');
 
 
 

@@ -74,7 +74,7 @@ p#demo {
 }
 
 .btn-primary:focus, .btn-primary.focus {
-    
+
     box-shadow: none;
 }
 
@@ -125,16 +125,16 @@ h6, .h6 {
                <img src="/imagens/camisa_social.jpg" class="img-fluid" alt="produto">
             </div>
             <div class="col-lg-6 col-sm-6 col-md-6 product-details  ftco-animate">
-            <h3 style="margin:15px 0px">Minha Camisa</h3>
-                
+            <h3 style="margin:15px 0px">Criando camisa personalizada</h3>
             <div class="row "  style="margin-left:15px;" >
-           
 
              <!-- MODELO -->
-             
                 <div>
-                    <div class="form-group d-flex"> 
-                        <div class="select-wrap" style="width:290px;">   
+
+                  <form class="" action="/carrinho" method="post">
+                    @csrf
+                    <div class="form-group d-flex">
+                        <div class="select-wrap" style="width:290px;">
                             <h6>Modelo</h6>
                             <div class="icon"><i class="fas fa-sort-down"></i></div>
                             <select name="Modelo" id="modelo" class="form-control" placeholder="Modelo">
@@ -145,22 +145,21 @@ h6, .h6 {
                                 <option value="normal">Normal</option>
                                 <option value="comfort">Comfort</option>
                             </select>
-                        </div> 
+                        </div>
                    </div>
-                    <div class="form-group d-flex"> 
-                        <div class="select-wrap" style="width:290px;">   
+                    <div class="form-group d-flex">
+                        <div class="select-wrap" style="width:290px;">
                         <h6>Comprimento</h6>
                         <div class="icon"><i class="fas fa-sort-down"></i></div>
                         <select name="comprimento" id="comprimento" class="form-control" placeholder="comprimento">
                                 <option value="">Escolha</option>
                                 <option value="manga-longa">Manga Longa</option>
                                 <option value="manga-curta">Manga Curta</option>
-                               
-                            </select>
-                        </div> 
+                        </select>
+                        </div>
                    </div>
-                    <div class="form-group d-flex"> 
-                        <div class="select-wrap" style="width:290px;">   
+                    <div class="form-group d-flex">
+                        <div class="select-wrap" style="width:290px;">
                         <h6>Colarinho</h6>
                         <div class="icon"><i class="fas fa-sort-down"></i></div>
                         <select name="colarinho" id="colarinho" class="form-control" placeholder="colarinho">
@@ -169,101 +168,58 @@ h6, .h6 {
                                 <option value="italiano">Italiano</option>
                                 <option value="ingles">Inglês</option>
                                 <option value="alemao">Alemão</option>
-                            </select>
-                        </div> 
+                        </select>
+                        </div>
                    </div>
-                    <div class="form-group d-flex"> 
-                        <div class="select-wrap" style="width:290px;">   
+                    <div class="form-group d-flex">
+                        <div class="select-wrap" style="width:290px;">
                         <h6>Bolso</h6>
                         <div class="icon"><i class="fas fa-sort-down"></i></div>
                         <select name="bolso" id="bolso" class="form-control" placeholder="bolso">
                                 <option value="">Escolha</option>
                                 <option value="com-bolso">Com Bolso</option>
                                 <option value="sem-bolso">Sem Bolso</option>
-                         
-                            </select>
-                        </div> 
+                        </select>
+                        </div>
                    </div>
-                    <div class="form-group d-flex"> 
-                        <div class="select-wrap" style="width:290px;">   
+                    <div class="form-group d-flex">
+                        <div class="select-wrap" style="width:290px;">
                         <h6>Vista</h6>
                         <div class="icon"><i class="fas fa-sort-down"></i></div>
                         <select name="vista" id="vista" class="form-control" placeholder="vista">
                                <option value="">Escolha</option>
                                 <option value="vista-lisa">Vista Lisa</option>
                                 <option value="vista-classica">Vista Clássica</option>
-                            
-                            </select>
-                        </div> 
+                        </select>
+                        </div>
                    </div>
-                    <div class="form-group d-flex"> 
-                        <div class="select-wrap" style="width:290px;">   
-                        <h6>Comprimento</h6>
+                    <div class="form-group d-flex">
+                        <div class="select-wrap" style="width:290px;">
+                        <h6>Estilo</h6>
                         <div class="icon"><i class="fas fa-sort-down"></i></div>
-                        <select name="comprimento" id="comprimento" class="form-control" placeholder="comprimento">
+                        <select name="estilo" id="estilo" class="form-control" placeholder="estilo">
                                <option value="">Escolha</option>
-                                <option value="casual">Casual</option>
-                                <option value="social">Social</option>
-                             
-                            </select>
-                        </div> 
+                               <option value="casual">Casual</option>
+                               <option value="social">Social</option>
+                        </select>
+                        </div>
                    </div>
 
+                   <div class="col-md-8">
+                     <p style="">
+                       <input type="submit" class="btn btn-primary py-3 " id="btn_comprar" style="-max=width:200px;">
+                         Adicionar ao carrinho
+                       </a>
+                     </p>
+                   </div>
 
+                  </form>
 
-
-                </div>    
+                </div> <!-- MODELO fim -->
 
             </div>
-            
-            <div class="col-md-8">
-                    <p style=""><a href="/carrinho" class="btn btn-primary py-3 " id="btn_comprar" style="-max=width:200px;">Comprar</a></p>
-                </div>
-    </div>
-
-
-
-
-
-        <!-- <div class="row mt-5">
-                <div class="col-md-12 nav-link-wrap">
-                    <div class="nav nav-pills d-flex text-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                        <a class="nav-link ftco-animate active mr-lg-1" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">Description</a>
-
-                        <a class="nav-link ftco-animate mr-lg-1" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">Manufacturer</a>
-
-                        <a class="nav-link ftco-animate" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab" aria-controls="v-pills-3" aria-selected="false">Reviews</a>
-
-                    </div>
-                </div>
-                <div class="col-md-12 tab-wrap">
-
-                    <div class="tab-content bg-light" id="v-pills-tabContent">
-
-                        <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="day-1-tab">
-                            <div class="p-4">
-                                <h3 class="mb-4">Nike Free RN 2019 iD</h3>
-                                <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little
-                                    Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and
-                                    Parole and dragged her into their agency, where they abused her for their.</p>
-                            </div>
-                        </div>
-
-                        <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-day-2-tab">
-                            <div class="p-4">
-                                <h3 class="mb-4">Manufactured By Nike</h3>
-                                <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little
-                                    Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and
-                                    Parole and dragged her into their agency, where they abused her for their.</p>
-                            </div>
-                        </div>
-                      
-                    </div>
-                </div>
-            </div> -->
-
-
-    </div>
+          </div>
+        </div>
 </section>
 
 
@@ -449,12 +405,7 @@ h6, .h6 {
 </section>
 
 
-
 <!--   MODAIS -->
-
-
-
-
 
 
 <!-- Modal PASSO 1 -->
@@ -506,14 +457,12 @@ h6, .h6 {
                                 <img src='imagens/comfort.jpg' width='175'>">
                                 Comfort
 
-
                         </div>
 
                         <hr style=" border-color:gray; margin-bottom:15px !important; margin-top:15px !important;">
 
 
                         <!-- FIM ITEM 1 -->
-
 
 
                         <!-- ITEM 4 -->
@@ -538,23 +487,17 @@ h6, .h6 {
                                 Curta
                             </button>
 
-
-
                         </div>
 
                         <hr style=" border-color:gray; margin-bottom:15px !important; margin-top:15px !important;">
 
                         <!-- FIM ITEM 2 -->
 
-
-
-
                         <!-- ITEM 3 -->
 
                         <h4 style=" color:#fff;">Colarinho</h4>
                         <p>Conheça os tipos de colarinho de uma camisa</p>
                         <div>
-
 
                             <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
                                 data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Frânces</span></p>
@@ -582,7 +525,6 @@ h6, .h6 {
                                 Inglês
                             </button>
 
-
                             <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
                                 data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Americano</span></p>
                                 É o mais informal dentre todos. Também pode ser usado com gravata mas preferencialmente usado sem. Os nós recomendados são o four-in-hand, half-windsor e windsor.
@@ -590,7 +532,6 @@ h6, .h6 {
                                 <img src='imagens/colarinho_americano.jpg' width='175'>">
                                 Americano
                             </button>
-
 
                         </div>
 
@@ -605,7 +546,6 @@ h6, .h6 {
                         <p>Camisa com bolso ou sem?</p>
                         <div>
 
-
                             <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
                                 data-html="true" title="<p><span style='color:#bb935f; font-weight:bold;'>Com Bolso</span></p>
                                 O bolso deve ser visto mais como uma questão de estilo.<br>
@@ -614,7 +554,6 @@ h6, .h6 {
                                 Com Bolso
                             </button>
 
-
                             <button type="button" class="btn btn-default btn-modal" data-toggle="tooltip"
                                 data-html="true"
                                 title="<p><span style='color:#bb935f; font-weight:bold;'>Sem Bolso</span></p>
@@ -622,15 +561,12 @@ h6, .h6 {
                                 Sem Bolso
                             </button>
 
-
-
                         </div>
 
                         <hr style=" border-color:gray; margin-bottom:15px !important; margin-top:15px !important;">
 
 
                         <!-- FIM ITEM 3 -->
-
 
 
                         <!-- ITEM 4 -->
@@ -695,10 +631,6 @@ h6, .h6 {
                         <hr style=" border-color:gray; margin-bottom:15px !important; margin-top:15px !important;">
 
                         <!-- FIM ITEM 4 -->
-
-
-
-
 
 
                     </div>
@@ -767,12 +699,6 @@ h6, .h6 {
 
                         <!-- FIM ITEM 1 -->
 
-
-
-
-
-
-
                     </div>
                 </div>
             </div>
@@ -829,7 +755,7 @@ h6, .h6 {
                     </div>
                 </div>
             </div>
-            <!-- 
+            <!--
             <div class="modal-footer">
                 <div class="forgot login-footer">
                     <span>
@@ -886,7 +812,7 @@ h6, .h6 {
                     </div>
                 </div>
             </div>
-            <!-- 
+            <!--
             <div class="modal-footer">
                 <div class="forgot login-footer">
                     <span>
@@ -901,13 +827,5 @@ h6, .h6 {
 </div>
 
 <!-- FIM MODAL -->
-
-
-
-
-
-
-
-
 
 @stop

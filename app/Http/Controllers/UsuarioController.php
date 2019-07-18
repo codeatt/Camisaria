@@ -24,6 +24,7 @@ class UsuarioController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
     public function create()
     {
         return view('myaccount.create');
@@ -90,4 +91,6 @@ class UsuarioController extends Controller
         $usuario = User::find($id)->delete();
         return redirect()->route('cadastros.index');
     }
+
+
 }

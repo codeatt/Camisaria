@@ -21,4 +21,10 @@ class camisariaController extends Controller
     public function checkoutCamisaria (){
         return view('checkout');
     }
+    public function store(Request $request)
+    {
+        Pedido::create($request->all());
+
+        return redirect()->route('carrinho');
+    }
 }
