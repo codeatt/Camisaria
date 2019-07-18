@@ -1,9 +1,12 @@
 <?php
+
+if (isset($_POST['email'])&& !empty($_POST['email'])){
+
     $to = 'marcos.ditommaso@hotmail.com';
-    $nome = $_POST["nome"];
-    $email= $_POST["email"];
-    $text= $_POST["mensagem"];
-    $assunto= $_POST["assunto"];
+    $nome = ($_POST["nome"]);
+    $email= ($_POST["email"]);
+    $text= ($_POST["mensagem"]);
+    $assunto= ($_POST["assunto"]);
     
 
 
@@ -27,5 +30,6 @@
     }else{
         echo 'Houve um erro no envio. Tente novamente';
     }
+}
 
 ?>

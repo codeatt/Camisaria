@@ -75,11 +75,11 @@
                   <li class="nav-item"><a href="/contato" class="nav-link">Contato</a></li>
                   @guest
                       <li class="nav-item" >
-                          <a  class="nav-link" href="{{ route('login') }}">><i class="fas fa-sign-in-alt"></i>&nbsp;{{ __('Entrar') }}</a>
+                          <a  class="nav-link" href="{{ route('login') }}"><i class="fas fa-sign-in-alt"></i>&nbsp;{{ __('Entrar') }}</a>
                       </li>
                       @if (Route::has('register'))
                           <li class="nav-item">
-                              <a class="nav-link" href="{{ route('register') }}"<i class="fas fa-user-edit"></i>&nbsp;>{{ __('Cadastro') }}</a>
+                              <a class="nav-link" href="{{ route('register') }}"><i class="fas fa-user-edit"></i>&nbsp;{{ __('Cadastro') }}</a>
                           </li>
                       @endif
                   @else
