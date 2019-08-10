@@ -35,8 +35,6 @@ Route::post('/carrinho ','camisariaController@carrinhoCamisaria');
 
 // Route::get('/carrinho ','carrinhoController@index')->name('carrinho.index');
 
-
-
 // Provider
 //Direciona para o facebook
 // Route::get('/auth/{provider}','Auth\LoginController@redirectToProvider');
