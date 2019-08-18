@@ -3,7 +3,7 @@
 Auth::routes();
 
 // Página Inicial
-Route::get('/ ','camisariaController@homeCamisaria');
+Route::get('/ ','CamisariaController@homeCamisaria');
 // Página Logado
 Route::get('/home', 'HomeController@index')->name('home');
 

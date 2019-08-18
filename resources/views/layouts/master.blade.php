@@ -51,7 +51,9 @@
                         </div>
                         <div class="col-md pr-4 d-flex topper align-items-center">
                             <div class="icon mr-2 d-flex justify-content-center align-items-center"></div>
-                            <span class="text" style="text-transform: initial;"><i class="far fa-envelope"></i>&nbsp;contato@camisaria.com.br</span>
+                            <span class="text" style="text-transform: initial;">
+                                <i class="far fa-envelope">
+                                </i>&nbsp;contato@camisaria.com.br</span>
                         </div>
                         <div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right">
                             <span class="text" id="texto_topo" style="text-transform: initial; font-style: italic;">Qualidade e bom gosto &amp; na medida certa</span>
