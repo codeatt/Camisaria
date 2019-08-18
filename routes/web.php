@@ -21,17 +21,17 @@ Route::resource('/cadastros', 'UsuarioController');
 // });
 
 // Montando Produto
-Route::get('/crie_sua_camisa ','camisariaController@crieCamisaria');
+Route::get('/crie_sua_camisa ','CamisariaController@crieCamisaria');
 
 // Concluindo compra
-Route::get('/checkout ','camisariaController@checkoutCamisaria');
+Route::get('/checkout ','CamisariaController@checkoutCamisaria');
 
 // Contato
-Route::get('/contato ','camisariaController@contatoCamisaria');
+Route::get('/contato ','CamisariaController@contatoCamisaria');
 
 //Carrinho
-Route::get('/carrinho ','camisariaController@carrinhoCamisaria');
-Route::post('/carrinho ','camisariaController@carrinhoCamisaria');
+Route::get('/carrinho ','CamisariaController@carrinhoCamisaria');
+Route::post('/carrinho ','CamisariaController@carrinhoCamisaria');
 
 // Route::get('/carrinho ','carrinhoController@index')->name('carrinho.index');
 
