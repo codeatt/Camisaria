@@ -1,5 +1,8 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
+
 Auth::routes();
 
 // Página Inicial
@@ -21,17 +24,17 @@ Route::resource('/cadastros', 'UsuarioController');
 // });
 
 // Montando Produto
-Route::get('/crie_sua_camisa ','CamisariaController@crieCamisaria');
+Route::get('/crie_sua_camisa ','camisariaController@crieCamisaria');
 
 // Concluindo compra
-Route::get('/checkout ','CamisariaController@checkoutCamisaria');
+Route::get('/checkout ','camisariaController@checkoutCamisaria');
 
 // Contato
-Route::get('/contato ','CamisariaController@contatoCamisaria');
+Route::get('/contato ','camisariaController@contatoCamisaria');
 
 //Carrinho
-Route::get('/carrinho ','CamisariaController@carrinhoCamisaria');
-Route::post('/carrinho ','CamisariaController@carrinhoCamisaria');
+Route::get('/carrinho ','camisariaController@carrinhoCamisaria');
+Route::post('/carrinho ','camisariaController@carrinhoCamisaria');
 
 // Route::get('/carrinho ','carrinhoController@index')->name('carrinho.index');
 
